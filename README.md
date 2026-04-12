@@ -94,8 +94,10 @@ cac/                        # github.com/flexappdev/cac
 ├── LICENSE
 ├── docs/
 │   └── cac-guide.md        # Comprehensive 5-domain exam guide (1562 lines)
-├── skill/
-│   └── SKILL.md            # Claude Code /cac skill — install instructions below
+├── .claude/
+│   └── skills/
+│       └── cac/
+│           └── SKILL.md    # Claude Code /cac skill — install instructions below
 ├── app/                    # Next.js study dashboard — localhost:24301
 │   └── src/
 └── cheat/                  # coming soon
@@ -111,10 +113,10 @@ The `/cac` Claude Code skill acts as an exam coach. Install it once, then invoke
 ```bash
 mkdir -p ~/.claude/skills/cac
 curl -o ~/.claude/skills/cac/SKILL.md \
-  https://raw.githubusercontent.com/flexappdev/cac/main/skill/SKILL.md
+  https://raw.githubusercontent.com/flexappdev/cac/main/.claude/skills/cac/SKILL.md
 ```
 
-Or manually: copy `skill/SKILL.md` → `~/.claude/skills/cac/SKILL.md`
+Or manually: copy `.claude/skills/cac/SKILL.md` → `~/.claude/skills/cac/SKILL.md`
 
 **Usage:**
 ```
