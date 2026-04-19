@@ -57,7 +57,7 @@ export default function ProgressPage() {
       {/* Header */}
       <div className="border-b border-zinc-800 bg-zinc-950/80 backdrop-blur-sm sticky top-0 z-10">
         <div className="max-w-[800px] mx-auto px-6 py-3 flex items-center gap-3">
-          <Trophy className="h-4 w-4 text-zinc-400" />
+          <Trophy className="h-4 w-4" style={{ color: "var(--app-accent)" }} />
           <h1 className="text-sm font-semibold text-zinc-100">Progress</h1>
         </div>
       </div>

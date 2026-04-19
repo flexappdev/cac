@@ -63,7 +63,7 @@ export default function DomainCard({ domain }: DomainCardProps) {
               {domain.course}
             </div>
             {/* Icon */}
-            <Icon className={`h-4.5 w-4.5 shrink-0 ${colors.text}`} style={{ width: "1.125rem", height: "1.125rem" }} />
+            <Icon className={`shrink-0 ${colors.text}`} style={{ width: "1.125rem", height: "1.125rem" }} />
           </div>
           <ChevronRight className="h-4 w-4 text-zinc-600 group-hover:text-zinc-400 transition-colors shrink-0 mt-0.5" />
         </div>

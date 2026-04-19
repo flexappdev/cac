@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { CheckCircle2, Circle, FileText, List } from "lucide-react";
+import Link from "next/link";
+import { CheckCircle2, Circle, FileText, List, ChevronRight } from "lucide-react";
 import type { Course, Lesson } from "@/lib/courses";
 import { COURSE_COLORS } from "@/lib/courses";
 import { loadProgress, toggleLesson } from "@/lib/progress";
@@ -23,7 +24,9 @@ export default function LessonList({ domain }: LessonListProps) {
     setCompleted(domainCompleted);
   }, [domain.id, domain.lessons]);
 
-  const handleToggle = (lesson: Lesson) => {
+  const handleToggle = (e: React.MouseEvent, lesson: Lesson) => {
+    e.preventDefault();
+    e.stopPropagation();
     toggleLesson(domain.id, lesson.id);
     setCompleted((prev) => ({ ...prev, [lesson.id]: !prev[lesson.id] }));
   };
@@ -33,10 +36,10 @@ export default function LessonList({ domain }: LessonListProps) {
       {domain.lessons.map((lesson, idx) => {
         const isDone = completed[lesson.id] ?? false;
         return (
-          <button
+          <Link
             key={lesson.id}
-            onClick={() => handleToggle(lesson)}
-            className={`w-full flex items-center gap-3 p-3.5 rounded-xl border text-left transition-all ${
+            href={`/domains/${domain.id}/${lesson.id}`}
+            className={`group w-full flex items-center gap-3 p-3.5 rounded-xl border text-left transition-all ${
               isDone
                 ? "bg-zinc-800/60 border-zinc-700"
                 : "bg-zinc-900 border-zinc-800 hover:border-zinc-700 hover:bg-zinc-800/40"
@@ -47,23 +50,32 @@ export default function LessonList({ domain }: LessonListProps) {
               {idx + 1}
             </span>
 
-            {/* Check icon */}
-            {isDone ? (
-              <CheckCircle2 className="h-4 w-4 shrink-0" style={{ color: colors.hex }} />
-            ) : (
-              <Circle className="h-4 w-4 shrink-0 text-zinc-700" />
-            )}
+            {/* Toggle check (click stops propagation so it doesn't navigate) */}
+            <button
+              onClick={(e) => handleToggle(e, lesson)}
+              className="shrink-0"
+              title={isDone ? "Mark incomplete" : "Mark complete"}
+            >
+              {isDone ? (
+                <CheckCircle2 className="h-4 w-4" style={{ color: colors.hex }} />
+              ) : (
+                <Circle className="h-4 w-4 text-zinc-700 hover:text-zinc-500 transition-colors" />
+              )}
+            </button>
 
             {/* Title */}
-            <span className={`flex-1 text-sm ${isDone ? "text-zinc-400 line-through" : "text-zinc-200"}`}>
+            <span className={`flex-1 text-sm ${isDone ? "text-zinc-500 line-through" : "text-zinc-200"}`}>
               {lesson.title}
             </span>
 
+            {/* Source tag */}
             <div className="flex items-center gap-1 text-zinc-600 text-[11px] shrink-0">
               {lesson.source === "captured" ? <FileText className="h-3 w-3" /> : <List className="h-3 w-3" />}
               <span>{lesson.source === "captured" ? "note" : "outline"}</span>
             </div>
-          </button>
+
+            <ChevronRight className="h-3.5 w-3.5 text-zinc-700 group-hover:text-zinc-500 shrink-0 transition-colors" />
+          </Link>
         );
       })}
     </div>

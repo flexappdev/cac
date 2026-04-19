@@ -47,9 +47,10 @@ export default function LeftSidebar() {
               title={collapsed ? label : undefined}
               className={`flex items-center gap-2.5 px-3 py-2 mx-1 rounded-lg text-xs transition-colors ${
                 active
-                  ? "bg-zinc-800 text-zinc-100"
+                  ? "bg-zinc-800/80 text-zinc-100"
                   : "text-zinc-500 hover:text-zinc-200 hover:bg-zinc-800/60"
               }`}
+              style={active ? { color: "var(--app-accent)" } : undefined}
             >
               <Icon className="h-3.5 w-3.5 shrink-0" />
               {!collapsed && <span className="truncate">{label}</span>}

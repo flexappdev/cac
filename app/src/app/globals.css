@@ -3,11 +3,10 @@
 @tailwind utilities;
 
 /* App accent color CSS variables — overridden by SettingsProvider via JS */
-/* Named --app-accent* to avoid collision with Tailwind's --accent HSL variable */
 :root {
-  --app-accent: #f59e0b;
-  --app-accent-dark: #d97706;
-  --app-accent-light: #fcd34d;
+  --app-accent: #006699;
+  --app-accent-dark: #004d73;
+  --app-accent-light: #33a6d9;
 }
 
 @layer base {
@@ -46,17 +45,55 @@
   }
 }
 
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 6px;
+/* Light mode overrides */
+html:not(.dark) body {
+  background-color: #f1f5f9;
+  color: #1e293b;
 }
-::-webkit-scrollbar-track {
-  background: #111;
+
+html:not(.dark) .bg-\[\#0a0a0a\] {
+  background-color: #f1f5f9 !important;
 }
-::-webkit-scrollbar-thumb {
-  background: #333;
-  border-radius: 3px;
+html:not(.dark) .bg-zinc-950\/80,
+html:not(.dark) .bg-zinc-950\/90,
+html:not(.dark) .bg-zinc-950\/95 {
+  background-color: rgba(248, 250, 252, 0.95) !important;
 }
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
+html:not(.dark) .bg-zinc-900,
+html:not(.dark) .bg-zinc-900\/60,
+html:not(.dark) .bg-zinc-900\/80 {
+  background-color: #ffffff !important;
 }
+html:not(.dark) .bg-zinc-800,
+html:not(.dark) .bg-zinc-800\/30,
+html:not(.dark) .bg-zinc-800\/40,
+html:not(.dark) .bg-zinc-800\/60 {
+  background-color: #e2e8f0 !important;
+}
+html:not(.dark) .border-zinc-800 { border-color: #cbd5e1 !important; }
+html:not(.dark) .border-zinc-700 { border-color: #94a3b8 !important; }
+html:not(.dark) .text-zinc-100 { color: #1e293b !important; }
+html:not(.dark) .text-zinc-200 { color: #334155 !important; }
+html:not(.dark) .text-zinc-300 { color: #475569 !important; }
+html:not(.dark) .text-zinc-400 { color: #64748b !important; }
+html:not(.dark) .text-zinc-500 { color: #94a3b8 !important; }
+html:not(.dark) .text-zinc-600 { color: #94a3b8 !important; }
+html:not(.dark) .text-zinc-700 { color: #cbd5e1 !important; }
+html:not(.dark) .divide-zinc-800 { border-color: #e2e8f0 !important; }
+html:not(.dark) .prose-invert { color: #334155 !important; }
+html:not(.dark) .prose-invert p,
+html:not(.dark) .prose-invert li { color: #475569 !important; }
+html:not(.dark) .prose-invert h1,
+html:not(.dark) .prose-invert h2,
+html:not(.dark) .prose-invert h3 { color: #1e293b !important; }
+html:not(.dark) .prose-invert code { background-color: #e2e8f0 !important; color: #1e293b !important; }
+html:not(.dark) .prose-invert pre { background-color: #f8fafc !important; border-color: #e2e8f0 !important; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #111; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #555; }
+html:not(.dark) ::-webkit-scrollbar-track { background: #e2e8f0; }
+html:not(.dark) ::-webkit-scrollbar-thumb { background: #94a3b8; }
+html:not(.dark) ::-webkit-scrollbar-thumb:hover { background: #64748b; }

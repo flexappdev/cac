@@ -2,9 +2,11 @@
 
 import { createContext, useCallback, useContext, useEffect, useState } from "react";
 
-export type AccentColor = "orange" | "pink" | "blue" | "purple" | "teal" | "rose";
+export type AccentColor = "steel" | "orange" | "pink" | "blue" | "purple" | "teal" | "rose";
+export type Theme = "dark" | "light";
 
 export const ACCENT_PRESETS: Record<AccentColor, { main: string; dark: string; light: string; name: string }> = {
+  steel:  { main: "#006699", dark: "#004d73", light: "#33a6d9", name: "Steel Blue" },
   orange: { main: "#f59e0b", dark: "#d97706", light: "#fcd34d", name: "Orange" },
   pink:   { main: "#ec4899", dark: "#db2777", light: "#f9a8d4", name: "Pink" },
   blue:   { main: "#3b82f6", dark: "#2563eb", light: "#93c5fd", name: "Blue" },
@@ -16,11 +18,13 @@ export const ACCENT_PRESETS: Record<AccentColor, { main: string; dark: string; l
 export interface Settings {
   accentColor: AccentColor;
   navCollapsed: boolean;
+  theme: Theme;
 }
 
 export const DEFAULT_SETTINGS: Settings = {
-  accentColor: "orange",
+  accentColor: "steel",
   navCollapsed: false,
+  theme: "dark",
 };
 
 interface SettingsContextValue {
@@ -41,6 +45,15 @@ export function applyAccent(color: AccentColor) {
   r.style.setProperty("--app-accent-light", p.light);
 }
 
+export function applyTheme(theme: Theme) {
+  const html = document.documentElement;
+  if (theme === "dark") {
+    html.classList.add("dark");
+  } else {
+    html.classList.remove("dark");
+  }
+}
+
 export function SettingsProvider({ children }: { children: React.ReactNode }) {
   const [settings, setSettings] = useState<Settings>(DEFAULT_SETTINGS);
 
@@ -50,8 +63,10 @@ export function SettingsProvider({ children }: { children: React.ReactNode }) {
       const parsed: Settings = saved ? { ...DEFAULT_SETTINGS, ...JSON.parse(saved) } : DEFAULT_SETTINGS;
       setSettings(parsed);
       applyAccent(parsed.accentColor);
+      applyTheme(parsed.theme);
     } catch {
       applyAccent(DEFAULT_SETTINGS.accentColor);
+      applyTheme(DEFAULT_SETTINGS.theme);
     }
   }, []);
 
@@ -60,6 +75,7 @@ export function SettingsProvider({ children }: { children: React.ReactNode }) {
       const next = { ...prev, ...patch };
       try { localStorage.setItem("cca-settings", JSON.stringify(next)); } catch {}
       if (patch.accentColor) applyAccent(patch.accentColor);
+      if (patch.theme) applyTheme(patch.theme);
       return next;
     });
   }, []);
