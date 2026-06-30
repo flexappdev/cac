@@ -4,18 +4,19 @@ This file provides guidance to any AI coding agent (Claude Code, Codex, etc.) wh
 
 ## Repo Overview
 
-CAC is a three-part study system for the **Claude Certified Architect (CCA)** certification:
+CCA is a three-part study system for the **Claude Certified Architect (CCA)** certification:
 
 | Component | Path | Description |
 |---|---|---|
-| Skill | `.claude/skills/cac/SKILL.md` | Claude Code `/cac` agent — exam coach |
-| App | `app/` | Next.js study dashboard at `localhost:24301` |
-| Guide | `docs/cac-guide.md` | 1562-line CCA exam guide covering all 5 domains |
+| Skill | `.claude/skills/cca/SKILL.md` | Claude Code `/cca` agent — exam coach |
+| App | `src/` | Next.js 16 study dashboard at `localhost:24301` (at repo root) |
+| Guide | `docs/cca-guide.md` | 1562-line CCA exam guide covering all 5 domains |
 
 ## App Commands
 
+The Next.js app lives at the repo root (it used to live in `app/` — that directory was flattened into the root for Vercel auto-detection).
+
 ```bash
-cd app
 npm run dev      # Start dev server at localhost:24301
 npm run build    # Production build
 npm run fresh    # Clean build (deletes .next, reinstalls)
@@ -37,12 +38,12 @@ Next.js 16 App Router (Turbopack), React 19, TypeScript, TailwindCSS 3, shadcn/u
 
 ## Skill
 
-`.claude/skills/cac/SKILL.md` defines the `/cac` Claude Code skill. Edit this file to change the skill's behaviour. Install to user environment via:
+`.claude/skills/cca/SKILL.md` defines the `/cca` Claude Code skill. Edit this file to change the skill's behaviour. Install to user environment via:
 
 ```bash
-mkdir -p ~/.claude/skills/cac
-curl -o ~/.claude/skills/cac/SKILL.md \
-  https://raw.githubusercontent.com/flexappdev/cac/main/.claude/skills/cac/SKILL.md
+mkdir -p ~/.claude/skills/cca
+curl -o ~/.claude/skills/cca/SKILL.md \
+  https://raw.githubusercontent.com/flexappdev/cca/main/.claude/skills/cca/SKILL.md
 ```
 
 ## Exam Content (5 Domains)

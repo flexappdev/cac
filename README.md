@@ -1,4 +1,4 @@
-# CAC — Claude Architect Certification
+# CCA — Claude Architect Certification
 
 [![Watch on YouTube](https://img.youtube.com/vi/wyFS10ZiuKI/maxresdefault.jpg)](https://www.youtube.com/watch?v=wyFS10ZiuKI)
 
@@ -6,8 +6,8 @@ A complete study system for the **Claude Certified Architect (CCA)** track. It c
 
 | Component | What it is |
 |---|---|
-| `/cac` skill | Claude Code skill that coaches you through exam prep |
-| `app/` | Next.js 16 study dashboard with the imported 17-course library, progress tracking, and quiz review |
+| `/cca` skill | Claude Code skill that coaches you through exam prep |
+| `src/` | Next.js 16 study dashboard with the imported 17-course library, progress tracking, and quiz review |
 | [`guides/`](./guides/README.md) | Entry point for long-form guides and study references |
 | [`courses/`](./courses/README.md) | Captured course notes, lesson indexes, and diagrams |
 | [`cheat/`](./cheat/README.md) | Condensed cram sheets and quick-reference material |
@@ -19,10 +19,10 @@ A complete study system for the **Claude Certified Architect (CCA)** track. It c
 | If you want to... | Open |
 |---|---|
 | Read the guide index | [guides/README.md](./guides/README.md) |
-| Jump straight to the canonical exam guide | [docs/cac-guide.md](./docs/cac-guide.md) |
+| Jump straight to the canonical exam guide | [docs/cca-guide.md](./docs/cca-guide.md) |
 | Browse the captured course library | [courses/README.md](./courses/README.md) |
 | Review the cheat sheets | [cheat/README.md](./cheat/README.md) |
-| Launch the study dashboard | [app/](./app/) |
+| Launch the study dashboard | [src/](./src/) — run `npm run dev` |
 
 ---
 
@@ -35,7 +35,7 @@ The repo now has four primary entry points:
 - [`courses/README.md`](./courses/README.md) for the imported 17-course library
 - [`cheat/README.md`](./cheat/README.md) for fast review material
 
-The app in [`app/`](./app/) mirrors the imported `courses/` content so the study dashboard and repo content stay aligned.
+The Next.js dashboard in [`src/`](./src/) mirrors the imported `courses/` content so the study dashboard and repo content stay aligned.
 
 ---
 
@@ -58,10 +58,10 @@ The quiz and long-form guide still map back to the five exam domains:
 ## Suggested Flow
 
 1. Start in [guides/README.md](./guides/README.md) to understand the overall study path.
-2. Read the main guide in [docs/cac-guide.md](./docs/cac-guide.md).
+2. Read the main guide in [docs/cca-guide.md](./docs/cca-guide.md).
 3. Work through the imported course notes in [courses/README.md](./courses/README.md).
 4. Use [cheat/CHEAT.md](./cheat/CHEAT.md) for review and memorisation.
-5. Open [`app/`](./app/) for progress tracking and quiz practice.
+5. Run `npm run dev` and open [http://localhost:24301](http://localhost:24301) for progress tracking and quiz practice.
 
 ---
 
@@ -82,23 +82,28 @@ The quiz and long-form guide still map back to the five exam domains:
 ## Repo Structure
 
 ```
-cac/                        # github.com/flexappdev/cac
+cca/                        # github.com/flexappdev/cca
 ├── README.md
 ├── LICENSE
+├── package.json            # Next.js 16 app at repo root (Vercel auto-detects)
+├── next.config.ts
+├── src/                    # Next.js dashboard — localhost:24301
+│   ├── app/                # routes
+│   ├── components/
+│   ├── data/courses.json   # 5 domains, 30 lessons, 15 quiz questions
+│   └── lib/
 ├── guides/
 │   └── README.md           # Human-friendly guide index
 ├── docs/
 │   ├── README.md           # Canonical docs index
-│   └── cac-guide.md        # Comprehensive exam guide
+│   └── cca-guide.md        # Comprehensive exam guide
 ├── courses/
 │   ├── README.md           # Index of the 17 imported course folders
 │   └── */index.md          # Per-course lesson navigation / capture status
 ├── .claude/
 │   └── skills/
-│       └── cac/
-│           └── SKILL.md    # Claude Code /cac skill
-├── app/                    # Next.js study dashboard — localhost:24301
-│   └── src/
+│       └── cca/
+│           └── SKILL.md    # Claude Code /cca skill
 └── cheat/
     ├── README.md           # Cheat-sheet index
     └── CHEAT.md            # Condensed quick-reference guide
@@ -106,28 +111,28 @@ cac/                        # github.com/flexappdev/cac
 
 ---
 
-## /cac Skill
+## /cca Skill
 
-The `/cac` Claude Code skill acts as an exam coach. Install it once, then invoke from any Claude Code session.
+The `/cca` Claude Code skill acts as an exam coach. Install it once, then invoke from any Claude Code session.
 
 **Install:**
 ```bash
-mkdir -p ~/.claude/skills/cac
-curl -o ~/.claude/skills/cac/SKILL.md \
-  https://raw.githubusercontent.com/flexappdev/cac/main/.claude/skills/cac/SKILL.md
+mkdir -p ~/.claude/skills/cca
+curl -o ~/.claude/skills/cca/SKILL.md \
+  https://raw.githubusercontent.com/flexappdev/cca/main/.claude/skills/cca/SKILL.md
 ```
 
-Or manually: copy `.claude/skills/cac/SKILL.md` → `~/.claude/skills/cac/SKILL.md`
+Or manually: copy `.claude/skills/cca/SKILL.md` → `~/.claude/skills/cca/SKILL.md`
 
 **Usage:**
 ```
-/cac               # Status + what to study next
-/cac quiz          # Random practice question
-/cac domain 3      # Deep dive into exam domain 3
-/cac cheat         # Compact cheat sheet
-/cac app           # Launch study dashboard at localhost:24301
-/cac plan          # Personalised study plan
-/cac resources     # Curated links
+/cca               # Status + what to study next
+/cca quiz          # Random practice question
+/cca domain 3      # Deep dive into exam domain 3
+/cca cheat         # Compact cheat sheet
+/cca app           # Launch study dashboard at localhost:24301
+/cca plan          # Personalised study plan
+/cca resources     # Curated links
 ```
 
 ---

@@ -32,7 +32,7 @@ export default function Home() {
         <div className="max-w-[1200px] mx-auto px-6 py-4 flex items-center gap-3">
           <GraduationCap className="h-5 w-5 shrink-0" style={{ color: "var(--app-accent)" }} />
           <div>
-            <h1 className="text-sm font-semibold text-zinc-100">CAC Study App</h1>
+            <h1 className="text-sm font-semibold text-zinc-100">CCA Study App</h1>
             <p className="text-xs text-zinc-500">{COURSES.length} courses · {totalLessons} lessons · 15 CCA review questions</p>
           </div>
         </div>

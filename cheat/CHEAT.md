@@ -141,4 +141,4 @@ Primary course anchors: `courses/1-claude-101/`, `courses/2-claude-code-101/`, `
 
 ---
 
-*Source: [github.com/flexappdev/cac](https://github.com/flexappdev/cac) · CAC / CCA exam prep*
+*Source: [github.com/flexappdev/cca](https://github.com/flexappdev/cca) · CCA / CCA exam prep*

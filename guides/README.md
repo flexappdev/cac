@@ -1,13 +1,13 @@
 # Guides
 
-This folder is the navigation layer for long-form study material in the CAC repo.
+This folder is the navigation layer for long-form study material in the CCA repo.
 
 ## Start Here
 
 | Guide | Location | Purpose |
 |---|---|---|
 | Docs index | [../docs/README.md](../docs/README.md) | Canonical source documents and guide entry points |
-| Full CCA certification guide | [../docs/cac-guide.md](../docs/cac-guide.md) | Main exam prep reference across the five exam domains |
+| Full CCA certification guide | [../docs/cca-guide.md](../docs/cca-guide.md) | Main exam prep reference across the five exam domains |
 | AI Fluency for nonprofits | [../docs/ai-fluency-for-nonprofits.md](../docs/ai-fluency-for-nonprofits.md) | Supplemental notes for a practical AI fluency track |
 
 ## Companion Material
@@ -20,6 +20,6 @@ This folder is the navigation layer for long-form study material in the CAC repo
 
 ## Recommended Path
 
-1. Read the main guide in [../docs/cac-guide.md](../docs/cac-guide.md).
+1. Read the main guide in [../docs/cca-guide.md](../docs/cca-guide.md).
 2. Use [../courses/README.md](../courses/README.md) to dive into the matching source course material.
 3. Finish with [../cheat/CHEAT.md](../cheat/CHEAT.md) for review.

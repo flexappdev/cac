@@ -26,7 +26,7 @@ export default function AboutPage() {
             <GraduationCap className="h-8 w-8" style={{ color: "var(--app-accent)" }} />
           </div>
           <div>
-            <h2 className="text-2xl font-bold text-zinc-100 mb-2">CAC Study System</h2>
+            <h2 className="text-2xl font-bold text-zinc-100 mb-2">CCA Study System</h2>
             <p className="text-sm text-zinc-400 leading-relaxed max-w-[600px]">
               This repo combines a certification guide, cheat sheets, a captured Anthropic course
               library, and a local Next.js dashboard. The quiz content still targets the five CCA

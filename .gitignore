@@ -212,9 +212,15 @@ __marimo__/
 !ms/src/lib/
 !spm/src/lib/
 !fad/src/lib/
+!src/lib/
+!src/lib/**
 
 # Node
 node_modules/
+
+# Next.js build output (app moved from app/ to repo root)
+.next/
+.vercel/
 
 # Capture script — auth session (never commit)
 scripts/.cookies.json

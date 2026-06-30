@@ -1,6 +1,6 @@
 # Cheat Sheets
 
-Quick-review material for the CAC / CCA study workflow.
+Quick-review material for the CCA / CCA study workflow.
 
 ## Files
 
@@ -12,5 +12,5 @@ Quick-review material for the CAC / CCA study workflow.
 
 1. Read the full guide first in [../guides/README.md](../guides/README.md).
 2. Use [CHEAT.md](./CHEAT.md) during timed review or the day before the exam.
-3. Cross-check unfamiliar terms against the long-form guide in [../docs/cac-guide.md](../docs/cac-guide.md).
+3. Cross-check unfamiliar terms against the long-form guide in [../docs/cca-guide.md](../docs/cca-guide.md).
 4. Jump back into [../courses/README.md](../courses/README.md) when you need fuller lesson context.

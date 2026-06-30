@@ -132,7 +132,7 @@ export default function SettingsPage() {
           <p className="text-xs font-semibold uppercase tracking-widest text-zinc-500 mb-4">App Info</p>
           <div className="bg-zinc-900 border border-zinc-800 rounded-xl divide-y divide-zinc-800">
             {[
-              { label: "App", value: "CAC Study App" },
+              { label: "App", value: "CCA Study App" },
               { label: "Port", value: "24301" },
               { label: "Default Accent", value: "#006699 (Steel Blue)" },
               { label: "Courses", value: String(COURSES.length) },

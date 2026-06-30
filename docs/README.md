@@ -1,12 +1,12 @@
 # Docs
 
-Primary source documents for the CAC repository.
+Primary source documents for the CCA repository.
 
 ## Documents
 
 | Document | Purpose |
 |---|---|
-| [cac-guide.md](./cac-guide.md) | Canonical certification guide covering all five exam domains |
+| [cca-guide.md](./cca-guide.md) | Canonical certification guide covering all five exam domains |
 | [ai-fluency-for-nonprofits.md](./ai-fluency-for-nonprofits.md) | Supplemental notes focused on the nonprofit AI fluency course |
 
 ## Related Entry Points
