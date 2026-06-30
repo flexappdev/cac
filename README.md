@@ -1,13 +1,13 @@
-# CAC — Codex Architect Certification
+# CAC — Claude Architect Certification
 
 [![Watch on YouTube](https://img.youtube.com/vi/wyFS10ZiuKI/maxresdefault.jpg)](https://www.youtube.com/watch?v=wyFS10ZiuKI)
 
-A complete study system for the **Codex Certified Architect (CCA)** track. It combines the long-form guide, captured course notes, cheat sheets, and a local study app in one repo.
+A complete study system for the **Claude Certified Architect (CCA)** track. It combines the long-form guide, captured course notes, cheat sheets, and a local study app in one repo.
 
 | Component | What it is |
 |---|---|
-| `/cac` skill | Codex skill that coaches you through exam prep |
-| `app/` | Next.js study dashboard with the imported 17-course library, progress tracking, and quiz review |
+| `/cac` skill | Claude Code skill that coaches you through exam prep |
+| `app/` | Next.js 16 study dashboard with the imported 17-course library, progress tracking, and quiz review |
 | [`guides/`](./guides/README.md) | Entry point for long-form guides and study references |
 | [`courses/`](./courses/README.md) | Captured course notes, lesson indexes, and diagrams |
 | [`cheat/`](./cheat/README.md) | Condensed cram sheets and quick-reference material |
@@ -48,7 +48,7 @@ The `courses/` folder currently includes 17 Anthropic course captures, ranging f
 The quiz and long-form guide still map back to the five exam domains:
 
 - Prompt Engineering & AI Fluency
-- Codex Development
+- Claude Code Development
 - Agentic Architecture
 - Model Context Protocol
 - Projects, Artifacts & Skills
@@ -93,10 +93,10 @@ cac/                        # github.com/flexappdev/cac
 ├── courses/
 │   ├── README.md           # Index of the 17 imported course folders
 │   └── */index.md          # Per-course lesson navigation / capture status
-├── .Codex/
+├── .claude/
 │   └── skills/
 │       └── cac/
-│           └── SKILL.md    # Codex /cac skill
+│           └── SKILL.md    # Claude Code /cac skill
 ├── app/                    # Next.js study dashboard — localhost:24301
 │   └── src/
 └── cheat/
@@ -108,16 +108,16 @@ cac/                        # github.com/flexappdev/cac
 
 ## /cac Skill
 
-The `/cac` Codex skill acts as an exam coach. Install it once, then invoke from any Codex session.
+The `/cac` Claude Code skill acts as an exam coach. Install it once, then invoke from any Claude Code session.
 
 **Install:**
 ```bash
-mkdir -p ~/.Codex/skills/cac
-curl -o ~/.Codex/skills/cac/SKILL.md \
-  https://raw.githubusercontent.com/flexappdev/cac/main/.Codex/skills/cac/SKILL.md
+mkdir -p ~/.claude/skills/cac
+curl -o ~/.claude/skills/cac/SKILL.md \
+  https://raw.githubusercontent.com/flexappdev/cac/main/.claude/skills/cac/SKILL.md
 ```
 
-Or manually: copy `.Codex/skills/cac/SKILL.md` → `~/.Codex/skills/cac/SKILL.md`
+Or manually: copy `.claude/skills/cac/SKILL.md` → `~/.claude/skills/cac/SKILL.md`
 
 **Usage:**
 ```

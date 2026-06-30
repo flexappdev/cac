@@ -215,3 +215,6 @@ __marimo__/
 
 # Node
 node_modules/
+
+# Capture script — auth session (never commit)
+scripts/.cookies.json

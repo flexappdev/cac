@@ -25,7 +25,7 @@ No test suite exists in this repo.
 
 ## App Architecture
 
-Next.js 15 App Router, React 19, TypeScript, TailwindCSS 3, shadcn/ui (Radix primitives).
+Next.js 16 App Router (Turbopack), React 19, TypeScript, TailwindCSS 3, shadcn/ui (Radix primitives).
 
 - `src/data/courses.json` — source of truth: 5 domains, 30 lessons, 15 quiz questions
 - `src/lib/courses.ts` — parses and exposes course data
