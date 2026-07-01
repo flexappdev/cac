@@ -24,7 +24,7 @@ export default function LeftSidebar() {
 
   return (
     <div
-      className={`fixed left-0 top-10 bottom-12 z-[90] flex flex-col border-r border-zinc-800 bg-zinc-950/95 backdrop-blur-sm transition-[width] duration-200 ${
+      className={`fixed left-0 top-10 bottom-12 z-[90] flex flex-col border-r border-zinc-800 bg-white/95 dark:bg-zinc-950/95 backdrop-blur-sm transition-[width] duration-200 ${
         collapsed ? "w-[52px]" : "w-[180px]"
       }`}
     >
