@@ -26,6 +26,8 @@ export interface QuizQuestion {
   domain: number;
   question: string;
   answer: string;
+  options: [string, string, string, string];
+  correctIndex: 0 | 1 | 2 | 3;
 }
 
 export interface ExamDomain {
@@ -85,99 +87,208 @@ export function getExamDomain(domain: number): ExamDomain | undefined {
 }
 
 export const QUIZ_QUESTIONS: QuizQuestion[] = [
-  // Domain 1
+  // Domain 1 — Prompt Engineering & AI Fluency
   {
     id: 1,
     domain: 1,
-    question: "Which element of a system prompt takes lowest precedence when instructions conflict?",
-    answer: "Content later in the context window / human turn instructions typically lose to system prompt",
+    question: "Which element takes the LOWEST precedence when instructions conflict?",
+    answer: "Content in the human turn typically loses to system prompt directives — the system prompt sits at the top of the instruction hierarchy.",
+    options: [
+      "Content later in the human turn",
+      "The system prompt itself",
+      "Text inside <thinking> blocks",
+      "The first message in a conversation",
+    ],
+    correctIndex: 0,
   },
   {
     id: 2,
     domain: 1,
-    question: "When should you use extended thinking vs standard response?",
-    answer: "Complex multi-step reasoning problems where showing work matters",
+    question: "When is extended thinking the right choice over a standard response?",
+    answer: "Extended thinking is designed for complex multi-step reasoning where letting the model show its work materially improves the answer.",
+    options: [
+      "Simple factual lookups where speed matters most",
+      "High-volume batch processing where cost matters",
+      "Complex multi-step reasoning problems",
+      "Any task that includes a system prompt",
+    ],
+    correctIndex: 2,
   },
   {
     id: 3,
     domain: 1,
     question: "What is prefilling the assistant turn used for?",
-    answer: "Forcing output format, skipping preamble, resuming partial responses",
+    answer: "Prefilling forces an output format, skips the preamble, or resumes a partial response — it anchors the assistant's first tokens.",
+    options: [
+      "Persisting memory across separate conversations",
+      "Forcing output format or skipping the preamble",
+      "Preventing the model from calling any tools",
+      "Turning on extended thinking automatically",
+    ],
+    correctIndex: 1,
   },
-  // Domain 2
+
+  // Domain 2 — Claude Code Development
   {
     id: 4,
     domain: 2,
-    question: "What are the 4 types of Claude Code memory?",
-    answer: "user, feedback, project, reference",
+    question: "What are the four types of Claude Code memory?",
+    answer: "The four memory types are user, feedback, project, and reference — used by the auto-memory system to build up context over sessions.",
+    options: [
+      "short-term, long-term, working, session",
+      "system, user, tool, thinking",
+      "user, feedback, project, reference",
+      "local, remote, cached, persistent",
+    ],
+    correctIndex: 2,
   },
   {
     id: 5,
     domain: 2,
-    question: "Which hook type runs before a tool is executed?",
-    answer: "PreToolUse hook",
+    question: "Which hook type runs BEFORE a tool is executed?",
+    answer: "PreToolUse fires before the tool call, letting you validate, block, or log the call. The four hook types are PreToolUse, PostToolUse, Notification, Stop.",
+    options: [
+      "BeforeCall hook",
+      "PreToolUse hook",
+      "OnRequest hook",
+      "PreExecute hook",
+    ],
+    correctIndex: 1,
   },
   {
     id: 6,
     domain: 2,
-    question: "What file configures Claude Code's project-level instructions?",
-    answer: "CLAUDE.md",
+    question: "What filename configures Claude Code's project-level instructions?",
+    answer: "CLAUDE.md at the project root (with an optional user-level ~/.claude/CLAUDE.md above it) is the canonical instruction file.",
+    options: [
+      ".claude.json",
+      "config.claude",
+      "settings.md",
+      "CLAUDE.md",
+    ],
+    correctIndex: 3,
   },
-  // Domain 3
+
+  // Domain 3 — Agentic Architecture
   {
     id: 7,
     domain: 3,
     question: "When should you use a subagent instead of a direct tool call?",
-    answer: "Multi-step tasks requiring their own agent loop, or when context isolation is needed",
+    answer: "Use a subagent when the task needs its own multi-step agent loop or when context isolation matters — the subagent's messages don't pollute the orchestrator's context.",
+    options: [
+      "Any time you need to make more than one tool call",
+      "Only when a single tool call would exceed the context window",
+      "Multi-step tasks that need an isolated agent loop",
+      "Whenever the user asks any question",
+    ],
+    correctIndex: 2,
   },
   {
     id: 8,
     domain: 3,
-    question: "What is the benefit of parallel tool calls?",
-    answer: "Reduced latency — independent operations run simultaneously",
+    question: "What is the main benefit of parallel tool calls?",
+    answer: "Independent operations run simultaneously, which reduces total latency compared to a serial chain.",
+    options: [
+      "Reduced latency — independent operations run at the same time",
+      "Automatic retry on error for every tool",
+      "Lower token cost per individual call",
+      "Access to more tools per conversation turn",
+    ],
+    correctIndex: 0,
   },
   {
     id: 9,
     domain: 3,
     question: "In an orchestrator/worker pattern, what does the orchestrator do?",
-    answer: "Plans and coordinates; delegates subtasks to worker subagents",
+    answer: "The orchestrator plans, coordinates, and delegates subtasks to worker subagents — it does not execute the work itself.",
+    options: [
+      "Executes every subtask itself to keep results consistent",
+      "Handles authentication and permissions for workers",
+      "Renders the final UI back to the user",
+      "Plans and coordinates; delegates subtasks to workers",
+    ],
+    correctIndex: 3,
   },
-  // Domain 4
+
+  // Domain 4 — Model Context Protocol
   {
     id: 10,
     domain: 4,
-    question: "What are the 3 components of MCP architecture?",
-    answer: "Host (Claude Code), Client (manages connection), Server (provides tools/resources)",
+    question: "What are the three components of MCP architecture?",
+    answer: "Host (e.g. Claude Code) → Client (manages the connection) → Server (provides tools, resources, and prompts).",
+    options: [
+      "Host, Client, Server",
+      "Frontend, Backend, Database",
+      "Producer, Broker, Consumer",
+      "Agent, Tool, Result",
+    ],
+    correctIndex: 0,
   },
   {
     id: 11,
     domain: 4,
-    question: "What transport types does MCP support?",
-    answer: "stdio (subprocess) and SSE (HTTP Server-Sent Events)",
+    question: "Which transport types does MCP support?",
+    answer: "stdio (child-process pipe) and SSE (HTTP Server-Sent Events) are the two supported transports.",
+    options: [
+      "HTTP and gRPC",
+      "stdio and SSE",
+      "WebSocket and REST",
+      "TCP and UDP",
+    ],
+    correctIndex: 1,
   },
   {
     id: 12,
     domain: 4,
     question: "What format must MCP tool input schemas use?",
-    answer: "JSON Schema",
+    answer: "MCP tool inputs are described with JSON Schema — the same schema shape you see across the tool ecosystem.",
+    options: [
+      "OpenAPI 3.0",
+      "YAML",
+      "JSON Schema",
+      "TypeScript interfaces",
+    ],
+    correctIndex: 2,
   },
-  // Domain 5
+
+  // Domain 5 — Projects, Artifacts & Skills
   {
     id: 13,
     domain: 5,
     question: "What is the difference between a Skill and a Hook?",
-    answer: "Skills are agent-invocable workflows (markdown prompts); Hooks run as shell scripts outside the agent loop",
+    answer: "Skills are markdown workflows the agent invokes inside the loop. Hooks are shell scripts the harness runs outside the loop — deterministic, no agent involvement.",
+    options: [
+      "Skills are billed separately; Hooks are free",
+      "Skills only work in the CLI; Hooks work in Claude.ai too",
+      "Skills are agent-invoked markdown workflows; Hooks are shell scripts run outside the loop",
+      "There is no functional difference — they are aliases",
+    ],
+    correctIndex: 2,
   },
   {
     id: 14,
     domain: 5,
     question: "What does plan mode (EnterPlanMode) prevent Claude from doing?",
-    answer: "Making any file changes — read-only exploration for architectural decisions",
+    answer: "Plan mode is read-only — no file writes, no edits, no non-readonly tool use. Only the plan file itself is editable.",
+    options: [
+      "Making file changes — plan mode is read-only",
+      "Calling any MCP servers",
+      "Reading files outside the working directory",
+      "Using more than one subagent",
+    ],
+    correctIndex: 0,
   },
   {
     id: 15,
     domain: 5,
-    question: "What are the 6 Claude Code extensions?",
-    answer: "CLAUDE.md, Skills, MCP, Subagents, Hooks, Plugins/Marketplaces",
+    question: "What are the six Claude Code extensions?",
+    answer: "CLAUDE.md, Skills, MCP, Subagents, Hooks, Plugins/Marketplaces — the six extension surfaces that shape Claude Code's behaviour.",
+    options: [
+      "CLAUDE.md, Skills, MCP, Subagents, Hooks, Plugins",
+      "CLAUDE.md, Skills, MCP, Memory, Hooks, Templates",
+      "Skills, Hooks, MCP, Memory, Sessions, Tools",
+      "Prompts, Templates, Hooks, MCP, Subagents, Plugins",
+    ],
+    correctIndex: 0,
   },
 ];
