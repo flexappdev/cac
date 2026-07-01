@@ -109,10 +109,14 @@ cca/                        # github.com/flexappdev/cca → cac-snowy.vercel.app
 ├── next.config.ts
 ├── vercel.json             # framework: nextjs (pinned for prod)
 ├── src/                    # Next.js dashboard — localhost:24301
-│   ├── app/                # routes
-│   ├── components/
+│   ├── app/                # routes — /, /domains, /diagrams, /quiz, /progress, …
+│   │   └── api/auth/       # NextAuth v5 [...nextauth] catch-all
+│   ├── auth.ts             # NextAuth config (Google provider)
+│   ├── components/         # QuizCard (MCQ), DiagramCard, AppHeader, SignInButton, …
 │   ├── data/courses.json   # 17 courses, 168 lessons, 15 quiz questions
 │   └── lib/
+│       ├── courses.ts      # taxonomy + QUIZ_QUESTIONS with options/correctIndex
+│       └── course-diagrams.tsx  # 17 inline editorial SVGs, one per course
 ├── scripts/
 │   ├── generate-lesson-assets.mjs   # runs on prebuild + predev
 │   └── lesson-videos.json           # optional per-lesson YouTube ID overrides
@@ -158,6 +162,36 @@ Or manually: copy `.claude/skills/cca/SKILL.md` → `~/.claude/skills/cca/SKILL.
 /cca plan          # Personalised study plan
 /cca resources     # Curated links
 ```
+
+---
+
+## Changelog
+
+### v2.2 — Study experience upgrade
+
+- **MCQ quizzes** — all 15 questions across the 5 domains now render 4 hand-written options with instant right/wrong feedback and inline explanations. No more self-scoring.
+- **`/diagrams` page** — new gallery route with one editorial Cleverfox-style SVG per course (17 diagrams: layer stacks, agent loops, MCP architecture, orchestrator/worker nested, capabilities quadrant, etc.). Sidebar gains a Diagrams nav item.
+- **Google Auth** — sign-in button in the top-right header via NextAuth v5. Needs `AUTH_SECRET`, `AUTH_GOOGLE_ID`, `AUTH_GOOGLE_SECRET` in `.env.local` and Vercel env vars (template at [`.env.example`](./.env.example)).
+- **Light mode fix** — 11 page containers were hard-coding `bg-[#0a0a0a]`; now every route inherits `bg-slate-50 dark:bg-[#0a0a0a]` so the theme toggle is finally clean.
+
+### v2.1 — Lesson viewer + assets
+
+Global top header, per-lesson diagram/image/video fields, Vercel file-tracer include for `courses/**` (fixed the empty-lesson bug), asset-generation scripts on prebuild.
+
+---
+
+## Google Auth setup
+
+Auth ships wired but inert until three env vars are set. About 5 minutes:
+
+1. `npx auth secret` → paste into `.env.local` as `AUTH_SECRET=…`
+2. Create an OAuth 2.0 Client at [console.cloud.google.com/apis/credentials](https://console.cloud.google.com/apis/credentials):
+   - Origins: `http://localhost:24301`, `https://cac-snowy.vercel.app`
+   - Redirect URIs: `<each origin>/api/auth/callback/google`
+3. Copy Client ID → `AUTH_GOOGLE_ID`, Client Secret → `AUTH_GOOGLE_SECRET`
+4. Add all three to Vercel (Settings → Environment Variables), redeploy
+
+Until then the sign-in button renders but Google returns 400.
 
 ---
 
