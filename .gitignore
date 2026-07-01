@@ -230,3 +230,7 @@ node_modules/
 # Capture script — auth session (never commit)
 scripts/.cookies.json
 .vercel
+
+# NextAuth v5 env (never commit secrets)
+.env.local
+.env.*.local
