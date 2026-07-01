@@ -1,5 +1,6 @@
 "use client";
 import LeftSidebar from "./LeftSidebar";
+import AppHeader from "./AppHeader";
 import AppFooter from "./AppFooter";
 import { useSettings } from "@/lib/settings";
 
@@ -9,9 +10,10 @@ export default function ShellWrapper({ children }: { children: React.ReactNode }
 
   return (
     <>
+      <AppHeader />
       <LeftSidebar />
       <main
-        className="min-h-screen pb-12 transition-[margin] duration-200"
+        className="min-h-screen pt-10 pb-12 transition-[margin] duration-200"
         style={{ marginLeft: `${sidebarWidth}px` }}
       >
         {children}

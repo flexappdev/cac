@@ -3,6 +3,7 @@
 [![Live on Vercel](https://img.shields.io/badge/live-cac--snowy.vercel.app-black?logo=vercel)](https://cac-snowy.vercel.app)
 [![GitHub](https://img.shields.io/badge/github-flexappdev%2Fcca-181717?logo=github)](https://github.com/flexappdev/cca)
 [![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=nextdotjs)](https://nextjs.org)
+[![Version](https://img.shields.io/badge/version-v2.1-blue)](#v21-changelog)
 
 [![Watch on YouTube](https://img.youtube.com/vi/wyFS10ZiuKI/maxresdefault.jpg)](https://www.youtube.com/watch?v=wyFS10ZiuKI)
 
@@ -48,8 +49,8 @@ The Next.js dashboard in [`src/`](./src/) mirrors the imported `courses/` conten
 
 ## Coverage
 
-### 17 Imported Courses
-The `courses/` folder currently includes 17 Anthropic course captures, ranging from `Claude 101` and `Claude Code 101` through MCP, subagents, agent skills, and AI fluency tracks.
+### 17 Imported Courses · 168 Lessons
+The `courses/` folder currently includes 17 Anthropic course captures (141 lessons with full ~530-word markdown notes, 27 outline-only lessons) ranging from `Claude 101` and `Claude Code 101` through MCP, subagents, agent skills, and AI fluency tracks. Every lesson renders in the dashboard with a hero image, diagram, and video link.
 
 ### 5 Exam Domains
 The quiz and long-form guide still map back to the five exam domains:
@@ -59,6 +60,17 @@ The quiz and long-form guide still map back to the five exam domains:
 - Agentic Architecture
 - Model Context Protocol
 - Projects, Artifacts & Skills
+
+---
+
+## v2.1 Changelog
+
+- **Global top header** — sticky bar shows `CCA · v2.1` on the left and a Sun/Moon theme toggle on the right; theme toggle moved out of the footer to a single canonical slot.
+- **Full lesson assets on every page** — extended the lesson schema with `diagram` / `image` / `video` fields. Each of the 168 lessons now renders (a) a course-branded SVG hero, (b) a diagram (topic PNG for the 141 captured lessons, generated inline SVG for the 27 outline lessons), (c) a video link card to Anthropic's YouTube channel (per-lesson video IDs can be added via `scripts/lesson-videos.json`).
+- **Prebuild asset pipeline** — `scripts/generate-lesson-assets.mjs` regenerates `public/lessons/**` from source PNGs under `courses/**` on every `npm run dev` / `npm run build`. Generated media is gitignored so the repo stays lean; Vercel rebuilds it on each deploy.
+- **Bug fix** — the lesson detail page was resolving markdown paths at `../` (from the pre-flatten layout) and reading files outside the repo. Fixed to resolve at `process.cwd()`.
+
+_Follow-up:_ move generated media to `s3://com27/cca/lessons/` via `/abc-s3` once the central S3 credentials are rotated (current keys return `InvalidAccessKeyId`).
 
 ---
 
@@ -99,8 +111,11 @@ cca/                        # github.com/flexappdev/cca → cac-snowy.vercel.app
 ├── src/                    # Next.js dashboard — localhost:24301
 │   ├── app/                # routes
 │   ├── components/
-│   ├── data/courses.json   # 5 domains, 30 lessons, 15 quiz questions
+│   ├── data/courses.json   # 17 courses, 168 lessons, 15 quiz questions
 │   └── lib/
+├── scripts/
+│   ├── generate-lesson-assets.mjs   # runs on prebuild + predev
+│   └── lesson-videos.json           # optional per-lesson YouTube ID overrides
 ├── guides/
 │   └── README.md           # Human-friendly guide index
 ├── docs/
@@ -148,12 +163,15 @@ Or manually: copy `.claude/skills/cca/SKILL.md` → `~/.claude/skills/cca/SKILL.
 
 ## Roadmap
 
-**Next goal:** Generate full lessons for each of the 17 courses — every lesson gets a written walkthrough plus a diagram, images, and a short video. The current `courses/` capture is just the outline scraped from Skilljar; the ambition is to turn it into a first-class studio-quality study library the app can serve directly.
+v2.1 delivered the first pass of the full-lessons ambition. Next milestones:
 
-- Text: expanded lesson notes per topic (in `courses/<n>-<slug>/<lesson>.md`)
-- Diagrams: one editorial SVG per lesson (via `/abc-diagrams` skill)
-- Images: hero + inline via `/iad` (Nano Banana / Runware)
-- Video: 30–60s explainer via `/abc-videos` pipeline
+- ✅ **Text (v2.1)** — captured notes per topic in `courses/<n>-<slug>/<lesson>.md` (141 lessons at ~530 words avg; 27 outline-only)
+- ✅ **Diagrams (v2.1)** — one diagram per lesson (topic PNG for captured, generated SVG for outline)
+- ✅ **Images (v2.1)** — course-branded SVG hero per lesson
+- ✅ **Video (v2.1)** — YouTube channel link card per lesson (per-lesson video IDs land via `scripts/lesson-videos.json`)
+- ⏳ **v2.2** — swap SVG heroes for `/iad` Nano Banana raster heroes; upload media to `s3://com27/cca/lessons/` via `/abc-s3`
+- ⏳ **v2.3** — 30–60s explainer video per lesson via `/abc-videos` pipeline
+- ⏳ **v2.4** — long-form editorial diagrams via `/abc-diagrams` skill (replaces the current topic PNGs for the 141 captured lessons)
 
 ---
 

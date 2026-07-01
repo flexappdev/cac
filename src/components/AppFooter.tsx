@@ -1,16 +1,15 @@
 "use client";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { GraduationCap, Shuffle, Sun, Moon } from "lucide-react";
+import { GraduationCap, Shuffle } from "lucide-react";
 import { useSettings, ACCENT_PRESETS } from "@/lib/settings";
 import { COURSES } from "@/lib/courses";
 
 export default function AppFooter() {
-  const { settings, update } = useSettings();
+  const { settings } = useSettings();
   const router = useRouter();
   const leftOffset = settings.navCollapsed ? 52 : 180;
   const accentName = ACCENT_PRESETS[settings.accentColor].name;
-  const isDark = settings.theme === "dark";
 
   const handleRandom = () => {
     const allLessons: { courseId: string; lessonId: string }[] = [];
@@ -39,7 +38,7 @@ export default function AppFooter() {
           </Link>
         </div>
 
-        {/* Right: random + theme toggle */}
+        {/* Right: random */}
         <div className="flex items-center gap-1">
           <button
             onClick={handleRandom}
@@ -48,14 +47,6 @@ export default function AppFooter() {
           >
             <Shuffle className="h-3 w-3" />
             <span className="hidden sm:inline">Random</span>
-          </button>
-          <button
-            onClick={() => update({ theme: isDark ? "light" : "dark" })}
-            title={isDark ? "Switch to light mode" : "Switch to dark mode"}
-            className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs text-zinc-600 hover:text-zinc-300 hover:bg-zinc-800 transition-colors"
-          >
-            {isDark ? <Sun className="h-3.5 w-3.5" /> : <Moon className="h-3.5 w-3.5" />}
-            <span className="hidden sm:inline">{isDark ? "Light" : "Dark"}</span>
           </button>
         </div>
       </div>

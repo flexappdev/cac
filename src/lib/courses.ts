@@ -5,6 +5,9 @@ export interface Lesson {
   title: string;
   path: string;
   source: "captured" | "index";
+  diagram?: string;
+  image?: string;
+  video?: string;
 }
 
 export interface Course {

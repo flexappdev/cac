@@ -1,0 +1,3 @@
+{
+  "_comment": "Optional per-lesson video overrides. Keys are '<courseId>/<lessonId>'. Values are full URLs (YouTube channel, video, or any embed). When absent, the generator uses the DEFAULT_VIDEO_URL fallback (Anthropic YouTube channel)."
+}

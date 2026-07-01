@@ -8,20 +8,132 @@
     "icon": "MessageSquare",
     "description": "Core Claude product concepts, prompting basics, projects, artifacts, and everyday usage patterns.",
     "lessons": [
-      { "id": "01-what-is-claude", "title": "What is Claude?", "path": "courses/1-claude-101/01-what-is-claude.md", "source": "captured" },
-      { "id": "02-first-conversation", "title": "Your first conversation with Claude", "path": "courses/1-claude-101/02-first-conversation.md", "source": "captured" },
-      { "id": "03-getting-better-results", "title": "Getting better results", "path": "courses/1-claude-101/03-getting-better-results.md", "source": "captured" },
-      { "id": "04-desktop-app", "title": "Claude desktop app: Chat, Cowork, Code", "path": "courses/1-claude-101/04-desktop-app.md", "source": "captured" },
-      { "id": "05-introduction-to-projects", "title": "Introduction to projects", "path": "courses/1-claude-101/05-introduction-to-projects.md", "source": "captured" },
-      { "id": "06-creating-with-artifacts", "title": "Creating with artifacts", "path": "courses/1-claude-101/06-creating-with-artifacts.md", "source": "captured" },
-      { "id": "07-working-with-skills", "title": "Working with skills", "path": "courses/1-claude-101/07-working-with-skills.md", "source": "captured" },
-      { "id": "08-connecting-your-tools", "title": "Connecting your tools", "path": "courses/1-claude-101/08-connecting-your-tools.md", "source": "captured" },
-      { "id": "09-enterprise-search", "title": "Enterprise search", "path": "courses/1-claude-101/09-enterprise-search.md", "source": "captured" },
-      { "id": "10-research-mode", "title": "Research mode for deep dives", "path": "courses/1-claude-101/10-research-mode.md", "source": "captured" },
-      { "id": "11-use-cases-by-role", "title": "Claude in action: use-cases by role", "path": "courses/1-claude-101/11-use-cases-by-role.md", "source": "captured" },
-      { "id": "12-other-ways-to-work", "title": "Other ways to work with Claude", "path": "courses/1-claude-101/12-other-ways-to-work.md", "source": "captured" },
-      { "id": "13-whats-next", "title": "What's next?", "path": "courses/1-claude-101/13-whats-next.md", "source": "captured" },
-      { "id": "14-certificate", "title": "Certificate of completion", "path": "courses/1-claude-101/14-certificate.md", "source": "captured" }
+      {
+        "id": "01-what-is-claude",
+        "title": "What is Claude?",
+        "path": "courses/1-claude-101/01-what-is-claude.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-101/01-what-is-claude-diagram.png",
+        "image": "/lessons/claude-101/01-what-is-claude-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "02-first-conversation",
+        "title": "Your first conversation with Claude",
+        "path": "courses/1-claude-101/02-first-conversation.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-101/02-first-conversation-diagram.png",
+        "image": "/lessons/claude-101/02-first-conversation-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "03-getting-better-results",
+        "title": "Getting better results",
+        "path": "courses/1-claude-101/03-getting-better-results.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-101/03-getting-better-results-diagram.png",
+        "image": "/lessons/claude-101/03-getting-better-results-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "04-desktop-app",
+        "title": "Claude desktop app: Chat, Cowork, Code",
+        "path": "courses/1-claude-101/04-desktop-app.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-101/04-desktop-app-diagram.png",
+        "image": "/lessons/claude-101/04-desktop-app-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "05-introduction-to-projects",
+        "title": "Introduction to projects",
+        "path": "courses/1-claude-101/05-introduction-to-projects.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-101/05-introduction-to-projects-diagram.png",
+        "image": "/lessons/claude-101/05-introduction-to-projects-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "06-creating-with-artifacts",
+        "title": "Creating with artifacts",
+        "path": "courses/1-claude-101/06-creating-with-artifacts.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-101/06-creating-with-artifacts-diagram.png",
+        "image": "/lessons/claude-101/06-creating-with-artifacts-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "07-working-with-skills",
+        "title": "Working with skills",
+        "path": "courses/1-claude-101/07-working-with-skills.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-101/07-working-with-skills-diagram.png",
+        "image": "/lessons/claude-101/07-working-with-skills-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "08-connecting-your-tools",
+        "title": "Connecting your tools",
+        "path": "courses/1-claude-101/08-connecting-your-tools.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-101/08-connecting-your-tools-diagram.png",
+        "image": "/lessons/claude-101/08-connecting-your-tools-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "09-enterprise-search",
+        "title": "Enterprise search",
+        "path": "courses/1-claude-101/09-enterprise-search.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-101/09-enterprise-search-diagram.png",
+        "image": "/lessons/claude-101/09-enterprise-search-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "10-research-mode",
+        "title": "Research mode for deep dives",
+        "path": "courses/1-claude-101/10-research-mode.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-101/10-research-mode-diagram.png",
+        "image": "/lessons/claude-101/10-research-mode-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "11-use-cases-by-role",
+        "title": "Claude in action: use-cases by role",
+        "path": "courses/1-claude-101/11-use-cases-by-role.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-101/11-use-cases-by-role-diagram.png",
+        "image": "/lessons/claude-101/11-use-cases-by-role-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "12-other-ways-to-work",
+        "title": "Other ways to work with Claude",
+        "path": "courses/1-claude-101/12-other-ways-to-work.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-101/12-other-ways-to-work-diagram.png",
+        "image": "/lessons/claude-101/12-other-ways-to-work-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "13-whats-next",
+        "title": "What's next?",
+        "path": "courses/1-claude-101/13-whats-next.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-101/13-whats-next-diagram.png",
+        "image": "/lessons/claude-101/13-whats-next-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "14-certificate",
+        "title": "Certificate of completion",
+        "path": "courses/1-claude-101/14-certificate.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-101/14-certificate-diagram.png",
+        "image": "/lessons/claude-101/14-certificate-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      }
     ]
   },
   {
@@ -33,19 +145,123 @@
     "icon": "Terminal",
     "description": "Foundational Claude Code workflows including setup, prompting, context, code review, skills, hooks, and MCP.",
     "lessons": [
-      { "id": "01-what-is-claude-code", "title": "What is Claude Code?", "path": "courses/2-claude-code-101/01-what-is-claude-code.md", "source": "captured" },
-      { "id": "02-how-claude-code-works", "title": "How Claude Code works", "path": "courses/2-claude-code-101/02-how-claude-code-works.md", "source": "captured" },
-      { "id": "03-installing-claude-code", "title": "Installing Claude Code", "path": "courses/2-claude-code-101/03-installing-claude-code.md", "source": "captured" },
-      { "id": "04-your-first-prompt", "title": "Your first prompt", "path": "courses/2-claude-code-101/04-your-first-prompt.md", "source": "captured" },
-      { "id": "05-explore-plan-code-commit", "title": "The explore → plan → code → commit workflow", "path": "courses/2-claude-code-101/05-explore-plan-code-commit.md", "source": "captured" },
-      { "id": "06-context-management", "title": "Context management", "path": "courses/2-claude-code-101/06-context-management.md", "source": "captured" },
-      { "id": "07-code-review", "title": "Code review", "path": "courses/2-claude-code-101/07-code-review.md", "source": "captured" },
-      { "id": "08-claude-md-file", "title": "The CLAUDE.md file", "path": "courses/2-claude-code-101/08-claude-md-file.md", "source": "captured" },
-      { "id": "09-subagents", "title": "Subagents", "path": "courses/2-claude-code-101/09-subagents.md", "source": "captured" },
-      { "id": "10-skills", "title": "Skills", "path": "courses/2-claude-code-101/10-skills.md", "source": "captured" },
-      { "id": "11-mcp", "title": "MCP", "path": "courses/2-claude-code-101/11-mcp.md", "source": "captured" },
-      { "id": "12-hooks", "title": "Hooks", "path": "courses/2-claude-code-101/12-hooks.md", "source": "captured" },
-      { "id": "13-quiz", "title": "Course quiz", "path": "courses/2-claude-code-101/13-quiz.md", "source": "captured" }
+      {
+        "id": "01-what-is-claude-code",
+        "title": "What is Claude Code?",
+        "path": "courses/2-claude-code-101/01-what-is-claude-code.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-code-101/01-what-is-claude-code-diagram.png",
+        "image": "/lessons/claude-code-101/01-what-is-claude-code-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "02-how-claude-code-works",
+        "title": "How Claude Code works",
+        "path": "courses/2-claude-code-101/02-how-claude-code-works.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-code-101/02-how-claude-code-works-diagram.png",
+        "image": "/lessons/claude-code-101/02-how-claude-code-works-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "03-installing-claude-code",
+        "title": "Installing Claude Code",
+        "path": "courses/2-claude-code-101/03-installing-claude-code.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-code-101/03-installing-claude-code-diagram.png",
+        "image": "/lessons/claude-code-101/03-installing-claude-code-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "04-your-first-prompt",
+        "title": "Your first prompt",
+        "path": "courses/2-claude-code-101/04-your-first-prompt.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-code-101/04-your-first-prompt-diagram.png",
+        "image": "/lessons/claude-code-101/04-your-first-prompt-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "05-explore-plan-code-commit",
+        "title": "The explore → plan → code → commit workflow",
+        "path": "courses/2-claude-code-101/05-explore-plan-code-commit.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-code-101/05-explore-plan-code-commit-diagram.png",
+        "image": "/lessons/claude-code-101/05-explore-plan-code-commit-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "06-context-management",
+        "title": "Context management",
+        "path": "courses/2-claude-code-101/06-context-management.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-code-101/06-context-management-diagram.png",
+        "image": "/lessons/claude-code-101/06-context-management-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "07-code-review",
+        "title": "Code review",
+        "path": "courses/2-claude-code-101/07-code-review.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-code-101/07-code-review-diagram.png",
+        "image": "/lessons/claude-code-101/07-code-review-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "08-claude-md-file",
+        "title": "The CLAUDE.md file",
+        "path": "courses/2-claude-code-101/08-claude-md-file.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-code-101/08-claude-md-file-diagram.png",
+        "image": "/lessons/claude-code-101/08-claude-md-file-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "09-subagents",
+        "title": "Subagents",
+        "path": "courses/2-claude-code-101/09-subagents.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-code-101/09-subagents-diagram.png",
+        "image": "/lessons/claude-code-101/09-subagents-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "10-skills",
+        "title": "Skills",
+        "path": "courses/2-claude-code-101/10-skills.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-code-101/10-skills-diagram.png",
+        "image": "/lessons/claude-code-101/10-skills-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "11-mcp",
+        "title": "MCP",
+        "path": "courses/2-claude-code-101/11-mcp.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-code-101/11-mcp-diagram.png",
+        "image": "/lessons/claude-code-101/11-mcp-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "12-hooks",
+        "title": "Hooks",
+        "path": "courses/2-claude-code-101/12-hooks.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-code-101/12-hooks-diagram.png",
+        "image": "/lessons/claude-code-101/12-hooks-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "13-quiz",
+        "title": "Course quiz",
+        "path": "courses/2-claude-code-101/13-quiz.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-code-101/13-quiz-diagram.png",
+        "image": "/lessons/claude-code-101/13-quiz-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      }
     ]
   },
   {
@@ -57,17 +273,105 @@
     "icon": "Briefcase",
     "description": "Cowork fundamentals: task loops, permissions, plugins, scheduling, document tasks, and troubleshooting.",
     "lessons": [
-      { "id": "01-what-is-cowork", "title": "What is Cowork?", "path": "courses/3-introduction-to-claude-cowork/01-what-is-cowork.md", "source": "captured" },
-      { "id": "02-getting-set-up", "title": "Getting set up", "path": "courses/3-introduction-to-claude-cowork/02-getting-set-up.md", "source": "captured" },
-      { "id": "03-the-task-loop", "title": "The task loop", "path": "courses/3-introduction-to-claude-cowork/03-the-task-loop.md", "source": "captured" },
-      { "id": "04-giving-cowork-context", "title": "Giving Cowork context", "path": "courses/3-introduction-to-claude-cowork/04-giving-cowork-context.md", "source": "captured" },
-      { "id": "05-plugins-cowork-as-specialist", "title": "Plugins: Cowork as a specialist", "path": "courses/3-introduction-to-claude-cowork/05-plugins-cowork-as-specialist.md", "source": "captured" },
-      { "id": "06-scheduled-tasks", "title": "Scheduled tasks", "path": "courses/3-introduction-to-claude-cowork/06-scheduled-tasks.md", "source": "captured" },
-      { "id": "07-file-and-document-tasks", "title": "File & document tasks", "path": "courses/3-introduction-to-claude-cowork/07-file-and-document-tasks.md", "source": "captured" },
-      { "id": "08-research-and-analysis", "title": "Research & analysis at scale", "path": "courses/3-introduction-to-claude-cowork/08-research-and-analysis.md", "source": "captured" },
-      { "id": "09-permissions-and-usage", "title": "Permissions, usage, & choosing your model", "path": "courses/3-introduction-to-claude-cowork/09-permissions-and-usage.md", "source": "captured" },
-      { "id": "10-troubleshooting", "title": "Troubleshooting & next steps", "path": "courses/3-introduction-to-claude-cowork/10-troubleshooting.md", "source": "captured" },
-      { "id": "11-quiz", "title": "Quiz on Claude Cowork", "path": "courses/3-introduction-to-claude-cowork/11-quiz.md", "source": "captured" }
+      {
+        "id": "01-what-is-cowork",
+        "title": "What is Cowork?",
+        "path": "courses/3-introduction-to-claude-cowork/01-what-is-cowork.md",
+        "source": "captured",
+        "diagram": "/lessons/introduction-to-claude-cowork/01-what-is-cowork-diagram.png",
+        "image": "/lessons/introduction-to-claude-cowork/01-what-is-cowork-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "02-getting-set-up",
+        "title": "Getting set up",
+        "path": "courses/3-introduction-to-claude-cowork/02-getting-set-up.md",
+        "source": "captured",
+        "diagram": "/lessons/introduction-to-claude-cowork/02-getting-set-up-diagram.png",
+        "image": "/lessons/introduction-to-claude-cowork/02-getting-set-up-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "03-the-task-loop",
+        "title": "The task loop",
+        "path": "courses/3-introduction-to-claude-cowork/03-the-task-loop.md",
+        "source": "captured",
+        "diagram": "/lessons/introduction-to-claude-cowork/03-the-task-loop-diagram.png",
+        "image": "/lessons/introduction-to-claude-cowork/03-the-task-loop-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "04-giving-cowork-context",
+        "title": "Giving Cowork context",
+        "path": "courses/3-introduction-to-claude-cowork/04-giving-cowork-context.md",
+        "source": "captured",
+        "diagram": "/lessons/introduction-to-claude-cowork/04-giving-cowork-context-diagram.png",
+        "image": "/lessons/introduction-to-claude-cowork/04-giving-cowork-context-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "05-plugins-cowork-as-specialist",
+        "title": "Plugins: Cowork as a specialist",
+        "path": "courses/3-introduction-to-claude-cowork/05-plugins-cowork-as-specialist.md",
+        "source": "captured",
+        "diagram": "/lessons/introduction-to-claude-cowork/05-plugins-cowork-as-specialist-diagram.png",
+        "image": "/lessons/introduction-to-claude-cowork/05-plugins-cowork-as-specialist-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "06-scheduled-tasks",
+        "title": "Scheduled tasks",
+        "path": "courses/3-introduction-to-claude-cowork/06-scheduled-tasks.md",
+        "source": "captured",
+        "diagram": "/lessons/introduction-to-claude-cowork/06-scheduled-tasks-diagram.png",
+        "image": "/lessons/introduction-to-claude-cowork/06-scheduled-tasks-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "07-file-and-document-tasks",
+        "title": "File & document tasks",
+        "path": "courses/3-introduction-to-claude-cowork/07-file-and-document-tasks.md",
+        "source": "captured",
+        "diagram": "/lessons/introduction-to-claude-cowork/07-file-and-document-tasks-diagram.png",
+        "image": "/lessons/introduction-to-claude-cowork/07-file-and-document-tasks-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "08-research-and-analysis",
+        "title": "Research & analysis at scale",
+        "path": "courses/3-introduction-to-claude-cowork/08-research-and-analysis.md",
+        "source": "captured",
+        "diagram": "/lessons/introduction-to-claude-cowork/08-research-and-analysis-diagram.png",
+        "image": "/lessons/introduction-to-claude-cowork/08-research-and-analysis-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "09-permissions-and-usage",
+        "title": "Permissions, usage, & choosing your model",
+        "path": "courses/3-introduction-to-claude-cowork/09-permissions-and-usage.md",
+        "source": "captured",
+        "diagram": "/lessons/introduction-to-claude-cowork/09-permissions-and-usage-diagram.png",
+        "image": "/lessons/introduction-to-claude-cowork/09-permissions-and-usage-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "10-troubleshooting",
+        "title": "Troubleshooting & next steps",
+        "path": "courses/3-introduction-to-claude-cowork/10-troubleshooting.md",
+        "source": "captured",
+        "diagram": "/lessons/introduction-to-claude-cowork/10-troubleshooting-diagram.png",
+        "image": "/lessons/introduction-to-claude-cowork/10-troubleshooting-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "11-quiz",
+        "title": "Quiz on Claude Cowork",
+        "path": "courses/3-introduction-to-claude-cowork/11-quiz.md",
+        "source": "captured",
+        "diagram": "/lessons/introduction-to-claude-cowork/11-quiz-diagram.png",
+        "image": "/lessons/introduction-to-claude-cowork/11-quiz-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      }
     ]
   },
   {
@@ -79,27 +383,195 @@
     "icon": "Code2",
     "description": "Hands-on Claude Code usage across setup, context control, custom commands, MCP servers, hooks, and SDK workflows.",
     "lessons": [
-      { "id": "01-introduction", "title": "Introduction", "path": "courses/4-claude-code-in-action/01-introduction.md", "source": "captured" },
-      { "id": "02-what-is-a-coding-assistant", "title": "What Is A Coding Assistant", "path": "courses/4-claude-code-in-action/02-what-is-a-coding-assistant.md", "source": "captured" },
-      { "id": "03-claude-code-in-action", "title": "Claude Code In Action", "path": "courses/4-claude-code-in-action/03-claude-code-in-action.md", "source": "captured" },
-      { "id": "04-claude-code-setup", "title": "Claude Code Setup", "path": "courses/4-claude-code-in-action/04-claude-code-setup.md", "source": "captured" },
-      { "id": "05-project-setup", "title": "Project Setup", "path": "courses/4-claude-code-in-action/05-project-setup.md", "source": "captured" },
-      { "id": "06-adding-context", "title": "Adding Context", "path": "courses/4-claude-code-in-action/06-adding-context.md", "source": "captured" },
-      { "id": "07-making-changes", "title": "Making Changes", "path": "courses/4-claude-code-in-action/07-making-changes.md", "source": "captured" },
-      { "id": "08-course-satisfaction-survey", "title": "Course Satisfaction Survey", "path": "courses/4-claude-code-in-action/08-course-satisfaction-survey.md", "source": "captured" },
-      { "id": "09-controlling-context", "title": "Controlling Context", "path": "courses/4-claude-code-in-action/09-controlling-context.md", "source": "captured" },
-      { "id": "10-custom-commands", "title": "Custom Commands", "path": "courses/4-claude-code-in-action/10-custom-commands.md", "source": "captured" },
-      { "id": "11-mcp-servers-with-claude-code", "title": "MCP Servers With Claude Code", "path": "courses/4-claude-code-in-action/11-mcp-servers-with-claude-code.md", "source": "captured" },
-      { "id": "12-github-integration", "title": "GitHub Integration", "path": "courses/4-claude-code-in-action/12-github-integration.md", "source": "captured" },
-      { "id": "13-introducing-hooks", "title": "Introducing Hooks", "path": "courses/4-claude-code-in-action/13-introducing-hooks.md", "source": "captured" },
-      { "id": "14-defining-hooks", "title": "Defining Hooks", "path": "courses/4-claude-code-in-action/14-defining-hooks.md", "source": "captured" },
-      { "id": "15-implementing-a-hook", "title": "Implementing A Hook", "path": "courses/4-claude-code-in-action/15-implementing-a-hook.md", "source": "captured" },
-      { "id": "16-gotchas-around-hooks", "title": "Gotchas Around Hooks", "path": "courses/4-claude-code-in-action/16-gotchas-around-hooks.md", "source": "captured" },
-      { "id": "17-useful-hooks", "title": "Useful Hooks", "path": "courses/4-claude-code-in-action/17-useful-hooks.md", "source": "captured" },
-      { "id": "18-another-useful-hook", "title": "Another Useful Hook", "path": "courses/4-claude-code-in-action/18-another-useful-hook.md", "source": "captured" },
-      { "id": "19-the-claude-code-sdk", "title": "The Claude Code SDK", "path": "courses/4-claude-code-in-action/19-the-claude-code-sdk.md", "source": "captured" },
-      { "id": "20-quiz-on-claude-code", "title": "Quiz On Claude Code", "path": "courses/4-claude-code-in-action/20-quiz-on-claude-code.md", "source": "captured" },
-      { "id": "21-summary-and-next-steps", "title": "Summary And Next Steps", "path": "courses/4-claude-code-in-action/21-summary-and-next-steps.md", "source": "captured" }
+      {
+        "id": "01-introduction",
+        "title": "Introduction",
+        "path": "courses/4-claude-code-in-action/01-introduction.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-code-in-action/01-introduction-diagram.png",
+        "image": "/lessons/claude-code-in-action/01-introduction-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "02-what-is-a-coding-assistant",
+        "title": "What Is A Coding Assistant",
+        "path": "courses/4-claude-code-in-action/02-what-is-a-coding-assistant.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-code-in-action/02-what-is-a-coding-assistant-diagram.png",
+        "image": "/lessons/claude-code-in-action/02-what-is-a-coding-assistant-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "03-claude-code-in-action",
+        "title": "Claude Code In Action",
+        "path": "courses/4-claude-code-in-action/03-claude-code-in-action.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-code-in-action/03-claude-code-in-action-diagram.png",
+        "image": "/lessons/claude-code-in-action/03-claude-code-in-action-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "04-claude-code-setup",
+        "title": "Claude Code Setup",
+        "path": "courses/4-claude-code-in-action/04-claude-code-setup.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-code-in-action/04-claude-code-setup-diagram.png",
+        "image": "/lessons/claude-code-in-action/04-claude-code-setup-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "05-project-setup",
+        "title": "Project Setup",
+        "path": "courses/4-claude-code-in-action/05-project-setup.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-code-in-action/05-project-setup-diagram.png",
+        "image": "/lessons/claude-code-in-action/05-project-setup-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "06-adding-context",
+        "title": "Adding Context",
+        "path": "courses/4-claude-code-in-action/06-adding-context.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-code-in-action/06-adding-context-diagram.png",
+        "image": "/lessons/claude-code-in-action/06-adding-context-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "07-making-changes",
+        "title": "Making Changes",
+        "path": "courses/4-claude-code-in-action/07-making-changes.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-code-in-action/07-making-changes-diagram.png",
+        "image": "/lessons/claude-code-in-action/07-making-changes-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "08-course-satisfaction-survey",
+        "title": "Course Satisfaction Survey",
+        "path": "courses/4-claude-code-in-action/08-course-satisfaction-survey.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-code-in-action/08-course-satisfaction-survey-diagram.png",
+        "image": "/lessons/claude-code-in-action/08-course-satisfaction-survey-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "09-controlling-context",
+        "title": "Controlling Context",
+        "path": "courses/4-claude-code-in-action/09-controlling-context.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-code-in-action/09-controlling-context-diagram.png",
+        "image": "/lessons/claude-code-in-action/09-controlling-context-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "10-custom-commands",
+        "title": "Custom Commands",
+        "path": "courses/4-claude-code-in-action/10-custom-commands.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-code-in-action/10-custom-commands-diagram.png",
+        "image": "/lessons/claude-code-in-action/10-custom-commands-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "11-mcp-servers-with-claude-code",
+        "title": "MCP Servers With Claude Code",
+        "path": "courses/4-claude-code-in-action/11-mcp-servers-with-claude-code.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-code-in-action/11-mcp-servers-with-claude-code-diagram.png",
+        "image": "/lessons/claude-code-in-action/11-mcp-servers-with-claude-code-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "12-github-integration",
+        "title": "GitHub Integration",
+        "path": "courses/4-claude-code-in-action/12-github-integration.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-code-in-action/12-github-integration-diagram.png",
+        "image": "/lessons/claude-code-in-action/12-github-integration-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "13-introducing-hooks",
+        "title": "Introducing Hooks",
+        "path": "courses/4-claude-code-in-action/13-introducing-hooks.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-code-in-action/13-introducing-hooks-diagram.png",
+        "image": "/lessons/claude-code-in-action/13-introducing-hooks-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "14-defining-hooks",
+        "title": "Defining Hooks",
+        "path": "courses/4-claude-code-in-action/14-defining-hooks.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-code-in-action/14-defining-hooks-diagram.png",
+        "image": "/lessons/claude-code-in-action/14-defining-hooks-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "15-implementing-a-hook",
+        "title": "Implementing A Hook",
+        "path": "courses/4-claude-code-in-action/15-implementing-a-hook.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-code-in-action/15-implementing-a-hook-diagram.png",
+        "image": "/lessons/claude-code-in-action/15-implementing-a-hook-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "16-gotchas-around-hooks",
+        "title": "Gotchas Around Hooks",
+        "path": "courses/4-claude-code-in-action/16-gotchas-around-hooks.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-code-in-action/16-gotchas-around-hooks-diagram.png",
+        "image": "/lessons/claude-code-in-action/16-gotchas-around-hooks-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "17-useful-hooks",
+        "title": "Useful Hooks",
+        "path": "courses/4-claude-code-in-action/17-useful-hooks.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-code-in-action/17-useful-hooks-diagram.png",
+        "image": "/lessons/claude-code-in-action/17-useful-hooks-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "18-another-useful-hook",
+        "title": "Another Useful Hook",
+        "path": "courses/4-claude-code-in-action/18-another-useful-hook.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-code-in-action/18-another-useful-hook-diagram.png",
+        "image": "/lessons/claude-code-in-action/18-another-useful-hook-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "19-the-claude-code-sdk",
+        "title": "The Claude Code SDK",
+        "path": "courses/4-claude-code-in-action/19-the-claude-code-sdk.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-code-in-action/19-the-claude-code-sdk-diagram.png",
+        "image": "/lessons/claude-code-in-action/19-the-claude-code-sdk-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "20-quiz-on-claude-code",
+        "title": "Quiz On Claude Code",
+        "path": "courses/4-claude-code-in-action/20-quiz-on-claude-code.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-code-in-action/20-quiz-on-claude-code-diagram.png",
+        "image": "/lessons/claude-code-in-action/20-quiz-on-claude-code-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "21-summary-and-next-steps",
+        "title": "Summary And Next Steps",
+        "path": "courses/4-claude-code-in-action/21-summary-and-next-steps.md",
+        "source": "captured",
+        "diagram": "/lessons/claude-code-in-action/21-summary-and-next-steps-diagram.png",
+        "image": "/lessons/claude-code-in-action/21-summary-and-next-steps-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      }
     ]
   },
   {
@@ -111,21 +583,141 @@
     "icon": "Sparkles",
     "description": "AI fluency foundations built around the 4D framework, prompting, diligence, and capability limits.",
     "lessons": [
-      { "id": "01-introduction-to-ai-fluency", "title": "Introduction To AI Fluency", "path": "courses/5-ai-fluency-framework-foundations/01-introduction-to-ai-fluency.md", "source": "captured" },
-      { "id": "02-why-do-we-need-ai-fluency", "title": "Why Do We Need AI Fluency", "path": "courses/5-ai-fluency-framework-foundations/02-why-do-we-need-ai-fluency.md", "source": "captured" },
-      { "id": "03-the-4d-framework", "title": "The 4D Framework", "path": "courses/5-ai-fluency-framework-foundations/03-the-4d-framework.md", "source": "captured" },
-      { "id": "04-generative-ai-fundamentals", "title": "Generative AI Fundamentals", "path": "courses/5-ai-fluency-framework-foundations/04-generative-ai-fundamentals.md", "source": "captured" },
-      { "id": "05-capabilities-limitations", "title": "Capabilities Limitations", "path": "courses/5-ai-fluency-framework-foundations/05-capabilities-limitations.md", "source": "captured" },
-      { "id": "06-a-closer-look-at-delegation", "title": "A Closer Look At Delegation", "path": "courses/5-ai-fluency-framework-foundations/06-a-closer-look-at-delegation.md", "source": "captured" },
-      { "id": "07-project-planning-and-delegation", "title": "Project Planning And Delegation", "path": "courses/5-ai-fluency-framework-foundations/07-project-planning-and-delegation.md", "source": "captured" },
-      { "id": "08-a-closer-look-at-description", "title": "A Closer Look At Description", "path": "courses/5-ai-fluency-framework-foundations/08-a-closer-look-at-description.md", "source": "captured" },
-      { "id": "09-effective-prompting-techniques", "title": "Effective Prompting Techniques", "path": "courses/5-ai-fluency-framework-foundations/09-effective-prompting-techniques.md", "source": "captured" },
-      { "id": "10-a-closer-look-at-discernment", "title": "A Closer Look At Discernment", "path": "courses/5-ai-fluency-framework-foundations/10-a-closer-look-at-discernment.md", "source": "captured" },
-      { "id": "11-the-description-discernment-loop", "title": "The Description Discernment Loop", "path": "courses/5-ai-fluency-framework-foundations/11-the-description-discernment-loop.md", "source": "captured" },
-      { "id": "12-a-closer-look-at-diligence", "title": "A Closer Look At Diligence", "path": "courses/5-ai-fluency-framework-foundations/12-a-closer-look-at-diligence.md", "source": "captured" },
-      { "id": "13-conclusion", "title": "Conclusion", "path": "courses/5-ai-fluency-framework-foundations/13-conclusion.md", "source": "captured" },
-      { "id": "14-certificate-of-completion", "title": "Certificate Of Completion", "path": "courses/5-ai-fluency-framework-foundations/14-certificate-of-completion.md", "source": "captured" },
-      { "id": "15-additional-activities", "title": "Additional Activities", "path": "courses/5-ai-fluency-framework-foundations/15-additional-activities.md", "source": "captured" }
+      {
+        "id": "01-introduction-to-ai-fluency",
+        "title": "Introduction To AI Fluency",
+        "path": "courses/5-ai-fluency-framework-foundations/01-introduction-to-ai-fluency.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-fluency-framework-foundations/01-introduction-to-ai-fluency-diagram.png",
+        "image": "/lessons/ai-fluency-framework-foundations/01-introduction-to-ai-fluency-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "02-why-do-we-need-ai-fluency",
+        "title": "Why Do We Need AI Fluency",
+        "path": "courses/5-ai-fluency-framework-foundations/02-why-do-we-need-ai-fluency.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-fluency-framework-foundations/02-why-do-we-need-ai-fluency-diagram.png",
+        "image": "/lessons/ai-fluency-framework-foundations/02-why-do-we-need-ai-fluency-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "03-the-4d-framework",
+        "title": "The 4D Framework",
+        "path": "courses/5-ai-fluency-framework-foundations/03-the-4d-framework.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-fluency-framework-foundations/03-the-4d-framework-diagram.png",
+        "image": "/lessons/ai-fluency-framework-foundations/03-the-4d-framework-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "04-generative-ai-fundamentals",
+        "title": "Generative AI Fundamentals",
+        "path": "courses/5-ai-fluency-framework-foundations/04-generative-ai-fundamentals.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-fluency-framework-foundations/04-generative-ai-fundamentals-diagram.png",
+        "image": "/lessons/ai-fluency-framework-foundations/04-generative-ai-fundamentals-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "05-capabilities-limitations",
+        "title": "Capabilities Limitations",
+        "path": "courses/5-ai-fluency-framework-foundations/05-capabilities-limitations.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-fluency-framework-foundations/05-capabilities-limitations-diagram.png",
+        "image": "/lessons/ai-fluency-framework-foundations/05-capabilities-limitations-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "06-a-closer-look-at-delegation",
+        "title": "A Closer Look At Delegation",
+        "path": "courses/5-ai-fluency-framework-foundations/06-a-closer-look-at-delegation.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-fluency-framework-foundations/06-a-closer-look-at-delegation-diagram.png",
+        "image": "/lessons/ai-fluency-framework-foundations/06-a-closer-look-at-delegation-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "07-project-planning-and-delegation",
+        "title": "Project Planning And Delegation",
+        "path": "courses/5-ai-fluency-framework-foundations/07-project-planning-and-delegation.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-fluency-framework-foundations/07-project-planning-and-delegation-diagram.png",
+        "image": "/lessons/ai-fluency-framework-foundations/07-project-planning-and-delegation-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "08-a-closer-look-at-description",
+        "title": "A Closer Look At Description",
+        "path": "courses/5-ai-fluency-framework-foundations/08-a-closer-look-at-description.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-fluency-framework-foundations/08-a-closer-look-at-description-diagram.png",
+        "image": "/lessons/ai-fluency-framework-foundations/08-a-closer-look-at-description-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "09-effective-prompting-techniques",
+        "title": "Effective Prompting Techniques",
+        "path": "courses/5-ai-fluency-framework-foundations/09-effective-prompting-techniques.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-fluency-framework-foundations/09-effective-prompting-techniques-diagram.png",
+        "image": "/lessons/ai-fluency-framework-foundations/09-effective-prompting-techniques-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "10-a-closer-look-at-discernment",
+        "title": "A Closer Look At Discernment",
+        "path": "courses/5-ai-fluency-framework-foundations/10-a-closer-look-at-discernment.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-fluency-framework-foundations/10-a-closer-look-at-discernment-diagram.png",
+        "image": "/lessons/ai-fluency-framework-foundations/10-a-closer-look-at-discernment-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "11-the-description-discernment-loop",
+        "title": "The Description Discernment Loop",
+        "path": "courses/5-ai-fluency-framework-foundations/11-the-description-discernment-loop.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-fluency-framework-foundations/11-the-description-discernment-loop-diagram.png",
+        "image": "/lessons/ai-fluency-framework-foundations/11-the-description-discernment-loop-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "12-a-closer-look-at-diligence",
+        "title": "A Closer Look At Diligence",
+        "path": "courses/5-ai-fluency-framework-foundations/12-a-closer-look-at-diligence.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-fluency-framework-foundations/12-a-closer-look-at-diligence-diagram.png",
+        "image": "/lessons/ai-fluency-framework-foundations/12-a-closer-look-at-diligence-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "13-conclusion",
+        "title": "Conclusion",
+        "path": "courses/5-ai-fluency-framework-foundations/13-conclusion.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-fluency-framework-foundations/13-conclusion-diagram.png",
+        "image": "/lessons/ai-fluency-framework-foundations/13-conclusion-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "14-certificate-of-completion",
+        "title": "Certificate Of Completion",
+        "path": "courses/5-ai-fluency-framework-foundations/14-certificate-of-completion.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-fluency-framework-foundations/14-certificate-of-completion-diagram.png",
+        "image": "/lessons/ai-fluency-framework-foundations/14-certificate-of-completion-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "15-additional-activities",
+        "title": "Additional Activities",
+        "path": "courses/5-ai-fluency-framework-foundations/15-additional-activities.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-fluency-framework-foundations/15-additional-activities-diagram.png",
+        "image": "/lessons/ai-fluency-framework-foundations/15-additional-activities-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      }
     ]
   },
   {
@@ -137,18 +729,114 @@
     "icon": "Braces",
     "description": "API-focused material covering tool use, prompting techniques, evaluation, modalities, deployment, and advanced app patterns.",
     "lessons": [
-      { "id": "01-introduction", "title": "Introduction", "path": "courses/6-building-with-the-claude-api/index.md", "source": "index" },
-      { "id": "02-api-tool-overview", "title": "API tool overview", "path": "courses/6-building-with-the-claude-api/index.md", "source": "index" },
-      { "id": "03-advanced-tool-use-with-the-api", "title": "Advanced tool use with the API", "path": "courses/6-building-with-the-claude-api/index.md", "source": "index" },
-      { "id": "04-prompt-evaluation-and-iteration", "title": "Prompt evaluation and iteration", "path": "courses/6-building-with-the-claude-api/index.md", "source": "index" },
-      { "id": "05-prompt-engineering-techniques", "title": "Prompt engineering techniques", "path": "courses/6-building-with-the-claude-api/index.md", "source": "index" },
-      { "id": "06-tool-use-with-claude", "title": "Tool use with Claude", "path": "courses/6-building-with-the-claude-api/index.md", "source": "index" },
-      { "id": "07-agentic-search", "title": "Agentic search", "path": "courses/6-building-with-the-claude-api/index.md", "source": "index" },
-      { "id": "08-new-modalities", "title": "New modalities", "path": "courses/6-building-with-the-claude-api/index.md", "source": "index" },
-      { "id": "09-model-context-protocol-mcp", "title": "Model Context Protocol (MCP)", "path": "courses/6-building-with-the-claude-api/index.md", "source": "index" },
-      { "id": "10-advanced-application-patterns", "title": "Advanced application patterns", "path": "courses/6-building-with-the-claude-api/index.md", "source": "index" },
-      { "id": "11-implementation-and-deployment", "title": "Implementation and deployment", "path": "courses/6-building-with-the-claude-api/index.md", "source": "index" },
-      { "id": "12-final-assessment", "title": "Final assessment", "path": "courses/6-building-with-the-claude-api/index.md", "source": "index" }
+      {
+        "id": "01-introduction",
+        "title": "Introduction",
+        "path": "courses/6-building-with-the-claude-api/index.md",
+        "source": "index",
+        "diagram": "/lessons/building-with-the-claude-api/01-introduction-diagram.svg",
+        "image": "/lessons/building-with-the-claude-api/01-introduction-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "02-api-tool-overview",
+        "title": "API tool overview",
+        "path": "courses/6-building-with-the-claude-api/index.md",
+        "source": "index",
+        "diagram": "/lessons/building-with-the-claude-api/02-api-tool-overview-diagram.svg",
+        "image": "/lessons/building-with-the-claude-api/02-api-tool-overview-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "03-advanced-tool-use-with-the-api",
+        "title": "Advanced tool use with the API",
+        "path": "courses/6-building-with-the-claude-api/index.md",
+        "source": "index",
+        "diagram": "/lessons/building-with-the-claude-api/03-advanced-tool-use-with-the-api-diagram.svg",
+        "image": "/lessons/building-with-the-claude-api/03-advanced-tool-use-with-the-api-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "04-prompt-evaluation-and-iteration",
+        "title": "Prompt evaluation and iteration",
+        "path": "courses/6-building-with-the-claude-api/index.md",
+        "source": "index",
+        "diagram": "/lessons/building-with-the-claude-api/04-prompt-evaluation-and-iteration-diagram.svg",
+        "image": "/lessons/building-with-the-claude-api/04-prompt-evaluation-and-iteration-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "05-prompt-engineering-techniques",
+        "title": "Prompt engineering techniques",
+        "path": "courses/6-building-with-the-claude-api/index.md",
+        "source": "index",
+        "diagram": "/lessons/building-with-the-claude-api/05-prompt-engineering-techniques-diagram.svg",
+        "image": "/lessons/building-with-the-claude-api/05-prompt-engineering-techniques-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "06-tool-use-with-claude",
+        "title": "Tool use with Claude",
+        "path": "courses/6-building-with-the-claude-api/index.md",
+        "source": "index",
+        "diagram": "/lessons/building-with-the-claude-api/06-tool-use-with-claude-diagram.svg",
+        "image": "/lessons/building-with-the-claude-api/06-tool-use-with-claude-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "07-agentic-search",
+        "title": "Agentic search",
+        "path": "courses/6-building-with-the-claude-api/index.md",
+        "source": "index",
+        "diagram": "/lessons/building-with-the-claude-api/07-agentic-search-diagram.svg",
+        "image": "/lessons/building-with-the-claude-api/07-agentic-search-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "08-new-modalities",
+        "title": "New modalities",
+        "path": "courses/6-building-with-the-claude-api/index.md",
+        "source": "index",
+        "diagram": "/lessons/building-with-the-claude-api/08-new-modalities-diagram.svg",
+        "image": "/lessons/building-with-the-claude-api/08-new-modalities-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "09-model-context-protocol-mcp",
+        "title": "Model Context Protocol (MCP)",
+        "path": "courses/6-building-with-the-claude-api/index.md",
+        "source": "index",
+        "diagram": "/lessons/building-with-the-claude-api/09-model-context-protocol-mcp-diagram.svg",
+        "image": "/lessons/building-with-the-claude-api/09-model-context-protocol-mcp-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "10-advanced-application-patterns",
+        "title": "Advanced application patterns",
+        "path": "courses/6-building-with-the-claude-api/index.md",
+        "source": "index",
+        "diagram": "/lessons/building-with-the-claude-api/10-advanced-application-patterns-diagram.svg",
+        "image": "/lessons/building-with-the-claude-api/10-advanced-application-patterns-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "11-implementation-and-deployment",
+        "title": "Implementation and deployment",
+        "path": "courses/6-building-with-the-claude-api/index.md",
+        "source": "index",
+        "diagram": "/lessons/building-with-the-claude-api/11-implementation-and-deployment-diagram.svg",
+        "image": "/lessons/building-with-the-claude-api/11-implementation-and-deployment-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "12-final-assessment",
+        "title": "Final assessment",
+        "path": "courses/6-building-with-the-claude-api/index.md",
+        "source": "index",
+        "diagram": "/lessons/building-with-the-claude-api/12-final-assessment-diagram.svg",
+        "image": "/lessons/building-with-the-claude-api/12-final-assessment-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      }
     ]
   },
   {
@@ -160,20 +848,132 @@
     "icon": "Plug",
     "description": "MCP architecture, clients, tools, resources, prompts, and end-to-end implementation basics.",
     "lessons": [
-      { "id": "01-welcome-to-the-course", "title": "Welcome To The Course", "path": "courses/7-introduction-to-model-context-protocol/01-welcome-to-the-course.md", "source": "captured" },
-      { "id": "02-introducing-mcp", "title": "Introducing MCP", "path": "courses/7-introduction-to-model-context-protocol/02-introducing-mcp.md", "source": "captured" },
-      { "id": "03-mcp-clients", "title": "MCP Clients", "path": "courses/7-introduction-to-model-context-protocol/03-mcp-clients.md", "source": "captured" },
-      { "id": "04-project-setup", "title": "Project Setup", "path": "courses/7-introduction-to-model-context-protocol/04-project-setup.md", "source": "captured" },
-      { "id": "05-defining-tools-with-mcp", "title": "Defining Tools With MCP", "path": "courses/7-introduction-to-model-context-protocol/05-defining-tools-with-mcp.md", "source": "captured" },
-      { "id": "06-the-server-inspector", "title": "The Server Inspector", "path": "courses/7-introduction-to-model-context-protocol/06-the-server-inspector.md", "source": "captured" },
-      { "id": "07-course-satisfaction-survey", "title": "Course Satisfaction Survey", "path": "courses/7-introduction-to-model-context-protocol/07-course-satisfaction-survey.md", "source": "captured" },
-      { "id": "08-implementing-a-client", "title": "Implementing A Client", "path": "courses/7-introduction-to-model-context-protocol/08-implementing-a-client.md", "source": "captured" },
-      { "id": "09-defining-resources", "title": "Defining Resources", "path": "courses/7-introduction-to-model-context-protocol/09-defining-resources.md", "source": "captured" },
-      { "id": "10-accessing-resources", "title": "Accessing Resources", "path": "courses/7-introduction-to-model-context-protocol/10-accessing-resources.md", "source": "captured" },
-      { "id": "11-defining-prompts", "title": "Defining Prompts", "path": "courses/7-introduction-to-model-context-protocol/11-defining-prompts.md", "source": "captured" },
-      { "id": "12-prompts-in-the-client", "title": "Prompts In The Client", "path": "courses/7-introduction-to-model-context-protocol/12-prompts-in-the-client.md", "source": "captured" },
-      { "id": "13-final-assessment-on-mcp", "title": "Final Assessment On MCP", "path": "courses/7-introduction-to-model-context-protocol/13-final-assessment-on-mcp.md", "source": "captured" },
-      { "id": "14-mcp-review", "title": "MCP Review", "path": "courses/7-introduction-to-model-context-protocol/14-mcp-review.md", "source": "captured" }
+      {
+        "id": "01-welcome-to-the-course",
+        "title": "Welcome To The Course",
+        "path": "courses/7-introduction-to-model-context-protocol/01-welcome-to-the-course.md",
+        "source": "captured",
+        "diagram": "/lessons/introduction-to-model-context-protocol/01-welcome-to-the-course-diagram.png",
+        "image": "/lessons/introduction-to-model-context-protocol/01-welcome-to-the-course-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "02-introducing-mcp",
+        "title": "Introducing MCP",
+        "path": "courses/7-introduction-to-model-context-protocol/02-introducing-mcp.md",
+        "source": "captured",
+        "diagram": "/lessons/introduction-to-model-context-protocol/02-introducing-mcp-diagram.png",
+        "image": "/lessons/introduction-to-model-context-protocol/02-introducing-mcp-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "03-mcp-clients",
+        "title": "MCP Clients",
+        "path": "courses/7-introduction-to-model-context-protocol/03-mcp-clients.md",
+        "source": "captured",
+        "diagram": "/lessons/introduction-to-model-context-protocol/03-mcp-clients-diagram.png",
+        "image": "/lessons/introduction-to-model-context-protocol/03-mcp-clients-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "04-project-setup",
+        "title": "Project Setup",
+        "path": "courses/7-introduction-to-model-context-protocol/04-project-setup.md",
+        "source": "captured",
+        "diagram": "/lessons/introduction-to-model-context-protocol/04-project-setup-diagram.png",
+        "image": "/lessons/introduction-to-model-context-protocol/04-project-setup-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "05-defining-tools-with-mcp",
+        "title": "Defining Tools With MCP",
+        "path": "courses/7-introduction-to-model-context-protocol/05-defining-tools-with-mcp.md",
+        "source": "captured",
+        "diagram": "/lessons/introduction-to-model-context-protocol/05-defining-tools-with-mcp-diagram.png",
+        "image": "/lessons/introduction-to-model-context-protocol/05-defining-tools-with-mcp-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "06-the-server-inspector",
+        "title": "The Server Inspector",
+        "path": "courses/7-introduction-to-model-context-protocol/06-the-server-inspector.md",
+        "source": "captured",
+        "diagram": "/lessons/introduction-to-model-context-protocol/06-the-server-inspector-diagram.png",
+        "image": "/lessons/introduction-to-model-context-protocol/06-the-server-inspector-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "07-course-satisfaction-survey",
+        "title": "Course Satisfaction Survey",
+        "path": "courses/7-introduction-to-model-context-protocol/07-course-satisfaction-survey.md",
+        "source": "captured",
+        "diagram": "/lessons/introduction-to-model-context-protocol/07-course-satisfaction-survey-diagram.png",
+        "image": "/lessons/introduction-to-model-context-protocol/07-course-satisfaction-survey-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "08-implementing-a-client",
+        "title": "Implementing A Client",
+        "path": "courses/7-introduction-to-model-context-protocol/08-implementing-a-client.md",
+        "source": "captured",
+        "diagram": "/lessons/introduction-to-model-context-protocol/08-implementing-a-client-diagram.png",
+        "image": "/lessons/introduction-to-model-context-protocol/08-implementing-a-client-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "09-defining-resources",
+        "title": "Defining Resources",
+        "path": "courses/7-introduction-to-model-context-protocol/09-defining-resources.md",
+        "source": "captured",
+        "diagram": "/lessons/introduction-to-model-context-protocol/09-defining-resources-diagram.png",
+        "image": "/lessons/introduction-to-model-context-protocol/09-defining-resources-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "10-accessing-resources",
+        "title": "Accessing Resources",
+        "path": "courses/7-introduction-to-model-context-protocol/10-accessing-resources.md",
+        "source": "captured",
+        "diagram": "/lessons/introduction-to-model-context-protocol/10-accessing-resources-diagram.png",
+        "image": "/lessons/introduction-to-model-context-protocol/10-accessing-resources-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "11-defining-prompts",
+        "title": "Defining Prompts",
+        "path": "courses/7-introduction-to-model-context-protocol/11-defining-prompts.md",
+        "source": "captured",
+        "diagram": "/lessons/introduction-to-model-context-protocol/11-defining-prompts-diagram.png",
+        "image": "/lessons/introduction-to-model-context-protocol/11-defining-prompts-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "12-prompts-in-the-client",
+        "title": "Prompts In The Client",
+        "path": "courses/7-introduction-to-model-context-protocol/12-prompts-in-the-client.md",
+        "source": "captured",
+        "diagram": "/lessons/introduction-to-model-context-protocol/12-prompts-in-the-client-diagram.png",
+        "image": "/lessons/introduction-to-model-context-protocol/12-prompts-in-the-client-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "13-final-assessment-on-mcp",
+        "title": "Final Assessment On MCP",
+        "path": "courses/7-introduction-to-model-context-protocol/13-final-assessment-on-mcp.md",
+        "source": "captured",
+        "diagram": "/lessons/introduction-to-model-context-protocol/13-final-assessment-on-mcp-diagram.png",
+        "image": "/lessons/introduction-to-model-context-protocol/13-final-assessment-on-mcp-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "14-mcp-review",
+        "title": "MCP Review",
+        "path": "courses/7-introduction-to-model-context-protocol/14-mcp-review.md",
+        "source": "captured",
+        "diagram": "/lessons/introduction-to-model-context-protocol/14-mcp-review-diagram.png",
+        "image": "/lessons/introduction-to-model-context-protocol/14-mcp-review-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      }
     ]
   },
   {
@@ -185,11 +985,51 @@
     "icon": "BookOpen",
     "description": "Applying AI fluency frameworks to course design, materials, assignments, and educator workflows.",
     "lessons": [
-      { "id": "01-introduction-to-ai-fluency-for-educators", "title": "Introduction To AI Fluency For Educators", "path": "courses/8-ai-fluency-for-educators/01-introduction-to-ai-fluency-for-educators.md", "source": "captured" },
-      { "id": "02-ai-fluency-framework-review", "title": "AI Fluency Framework Review", "path": "courses/8-ai-fluency-for-educators/02-ai-fluency-framework-review.md", "source": "captured" },
-      { "id": "03-applying-ai-fluency-to-course-design-and-learning-outcomes", "title": "Applying AI Fluency To Course Design And Learning Outcomes", "path": "courses/8-ai-fluency-for-educators/03-applying-ai-fluency-to-course-design-and-learning-outcomes.md", "source": "captured" },
-      { "id": "04-applying-ai-fluency-to-learning-materials-and-assignments", "title": "Applying AI Fluency To Learning Materials And Assignments", "path": "courses/8-ai-fluency-for-educators/04-applying-ai-fluency-to-learning-materials-and-assignments.md", "source": "captured" },
-      { "id": "05-certificate-of-completion", "title": "Certificate Of Completion", "path": "courses/8-ai-fluency-for-educators/05-certificate-of-completion.md", "source": "captured" }
+      {
+        "id": "01-introduction-to-ai-fluency-for-educators",
+        "title": "Introduction To AI Fluency For Educators",
+        "path": "courses/8-ai-fluency-for-educators/01-introduction-to-ai-fluency-for-educators.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-fluency-for-educators/01-introduction-to-ai-fluency-for-educators-diagram.png",
+        "image": "/lessons/ai-fluency-for-educators/01-introduction-to-ai-fluency-for-educators-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "02-ai-fluency-framework-review",
+        "title": "AI Fluency Framework Review",
+        "path": "courses/8-ai-fluency-for-educators/02-ai-fluency-framework-review.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-fluency-for-educators/02-ai-fluency-framework-review-diagram.png",
+        "image": "/lessons/ai-fluency-for-educators/02-ai-fluency-framework-review-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "03-applying-ai-fluency-to-course-design-and-learning-outcomes",
+        "title": "Applying AI Fluency To Course Design And Learning Outcomes",
+        "path": "courses/8-ai-fluency-for-educators/03-applying-ai-fluency-to-course-design-and-learning-outcomes.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-fluency-for-educators/03-applying-ai-fluency-to-course-design-and-learning-outcomes-diagram.png",
+        "image": "/lessons/ai-fluency-for-educators/03-applying-ai-fluency-to-course-design-and-learning-outcomes-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "04-applying-ai-fluency-to-learning-materials-and-assignments",
+        "title": "Applying AI Fluency To Learning Materials And Assignments",
+        "path": "courses/8-ai-fluency-for-educators/04-applying-ai-fluency-to-learning-materials-and-assignments.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-fluency-for-educators/04-applying-ai-fluency-to-learning-materials-and-assignments-diagram.png",
+        "image": "/lessons/ai-fluency-for-educators/04-applying-ai-fluency-to-learning-materials-and-assignments-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "05-certificate-of-completion",
+        "title": "Certificate Of Completion",
+        "path": "courses/8-ai-fluency-for-educators/05-certificate-of-completion.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-fluency-for-educators/05-certificate-of-completion-diagram.png",
+        "image": "/lessons/ai-fluency-for-educators/05-certificate-of-completion-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      }
     ]
   },
   {
@@ -201,12 +1041,60 @@
     "icon": "GraduationCap",
     "description": "Student-facing AI fluency concepts for learning, career planning, and responsible human-in-the-loop use.",
     "lessons": [
-      { "id": "01-welcome-to-ai-fluency-for-students", "title": "Welcome To AI Fluency For Students", "path": "courses/9-ai-fluency-for-students/01-welcome-to-ai-fluency-for-students.md", "source": "captured" },
-      { "id": "02-ai-fluency-framework", "title": "AI Fluency Framework", "path": "courses/9-ai-fluency-for-students/02-ai-fluency-framework.md", "source": "captured" },
-      { "id": "03-ai-as-a-learning-partner", "title": "AI As A Learning Partner", "path": "courses/9-ai-fluency-for-students/03-ai-as-a-learning-partner.md", "source": "captured" },
-      { "id": "04-ai-in-career-planning", "title": "AI In Career Planning", "path": "courses/9-ai-fluency-for-students/04-ai-in-career-planning.md", "source": "captured" },
-      { "id": "05-being-the-human-in-the-loop", "title": "Being The Human In The Loop", "path": "courses/9-ai-fluency-for-students/05-being-the-human-in-the-loop.md", "source": "captured" },
-      { "id": "06-certificate-of-completion", "title": "Certificate Of Completion", "path": "courses/9-ai-fluency-for-students/06-certificate-of-completion.md", "source": "captured" }
+      {
+        "id": "01-welcome-to-ai-fluency-for-students",
+        "title": "Welcome To AI Fluency For Students",
+        "path": "courses/9-ai-fluency-for-students/01-welcome-to-ai-fluency-for-students.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-fluency-for-students/01-welcome-to-ai-fluency-for-students-diagram.png",
+        "image": "/lessons/ai-fluency-for-students/01-welcome-to-ai-fluency-for-students-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "02-ai-fluency-framework",
+        "title": "AI Fluency Framework",
+        "path": "courses/9-ai-fluency-for-students/02-ai-fluency-framework.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-fluency-for-students/02-ai-fluency-framework-diagram.png",
+        "image": "/lessons/ai-fluency-for-students/02-ai-fluency-framework-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "03-ai-as-a-learning-partner",
+        "title": "AI As A Learning Partner",
+        "path": "courses/9-ai-fluency-for-students/03-ai-as-a-learning-partner.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-fluency-for-students/03-ai-as-a-learning-partner-diagram.png",
+        "image": "/lessons/ai-fluency-for-students/03-ai-as-a-learning-partner-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "04-ai-in-career-planning",
+        "title": "AI In Career Planning",
+        "path": "courses/9-ai-fluency-for-students/04-ai-in-career-planning.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-fluency-for-students/04-ai-in-career-planning-diagram.png",
+        "image": "/lessons/ai-fluency-for-students/04-ai-in-career-planning-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "05-being-the-human-in-the-loop",
+        "title": "Being The Human In The Loop",
+        "path": "courses/9-ai-fluency-for-students/05-being-the-human-in-the-loop.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-fluency-for-students/05-being-the-human-in-the-loop-diagram.png",
+        "image": "/lessons/ai-fluency-for-students/05-being-the-human-in-the-loop-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "06-certificate-of-completion",
+        "title": "Certificate Of Completion",
+        "path": "courses/9-ai-fluency-for-students/06-certificate-of-completion.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-fluency-for-students/06-certificate-of-completion-diagram.png",
+        "image": "/lessons/ai-fluency-for-students/06-certificate-of-completion-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      }
     ]
   },
   {
@@ -218,8 +1106,24 @@
     "icon": "Network",
     "description": "Advanced MCP topics, transports, and deeper protocol concepts captured from the training catalog.",
     "lessons": [
-      { "id": "01-core-mcp-features", "title": "Core MCP features", "path": "courses/10-model-context-protocol-advanced-topics/index.md", "source": "index" },
-      { "id": "02-transports-and-communication", "title": "Transports and communication", "path": "courses/10-model-context-protocol-advanced-topics/index.md", "source": "index" }
+      {
+        "id": "01-core-mcp-features",
+        "title": "Core MCP features",
+        "path": "courses/10-model-context-protocol-advanced-topics/index.md",
+        "source": "index",
+        "diagram": "/lessons/model-context-protocol-advanced-topics/01-core-mcp-features-diagram.svg",
+        "image": "/lessons/model-context-protocol-advanced-topics/01-core-mcp-features-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "02-transports-and-communication",
+        "title": "Transports and communication",
+        "path": "courses/10-model-context-protocol-advanced-topics/index.md",
+        "source": "index",
+        "diagram": "/lessons/model-context-protocol-advanced-topics/02-transports-and-communication-diagram.svg",
+        "image": "/lessons/model-context-protocol-advanced-topics/02-transports-and-communication-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      }
     ]
   },
   {
@@ -231,12 +1135,60 @@
     "icon": "Cloud",
     "description": "Using Claude through Amazon Bedrock, including evaluation, tool use, RAG, MCP, and Claude Code integration.",
     "lessons": [
-      { "id": "01-getting-started-with-amazon-bedrock", "title": "Getting started with Amazon Bedrock", "path": "courses/11-claude-with-amazon-bedrock/index.md", "source": "index" },
-      { "id": "02-prompt-engineering-evaluation", "title": "Prompt engineering & evaluation", "path": "courses/11-claude-with-amazon-bedrock/index.md", "source": "index" },
-      { "id": "03-tool-use-with-claude", "title": "Tool use with Claude", "path": "courses/11-claude-with-amazon-bedrock/index.md", "source": "index" },
-      { "id": "04-retrieval-augmented-generation", "title": "Retrieval augmented generation", "path": "courses/11-claude-with-amazon-bedrock/index.md", "source": "index" },
-      { "id": "05-model-context-protocol-mcp", "title": "Model Context Protocol (MCP)", "path": "courses/11-claude-with-amazon-bedrock/index.md", "source": "index" },
-      { "id": "06-claude-code-computer-use", "title": "Claude Code & Computer Use", "path": "courses/11-claude-with-amazon-bedrock/index.md", "source": "index" }
+      {
+        "id": "01-getting-started-with-amazon-bedrock",
+        "title": "Getting started with Amazon Bedrock",
+        "path": "courses/11-claude-with-amazon-bedrock/index.md",
+        "source": "index",
+        "diagram": "/lessons/claude-with-amazon-bedrock/01-getting-started-with-amazon-bedrock-diagram.svg",
+        "image": "/lessons/claude-with-amazon-bedrock/01-getting-started-with-amazon-bedrock-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "02-prompt-engineering-evaluation",
+        "title": "Prompt engineering & evaluation",
+        "path": "courses/11-claude-with-amazon-bedrock/index.md",
+        "source": "index",
+        "diagram": "/lessons/claude-with-amazon-bedrock/02-prompt-engineering-evaluation-diagram.svg",
+        "image": "/lessons/claude-with-amazon-bedrock/02-prompt-engineering-evaluation-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "03-tool-use-with-claude",
+        "title": "Tool use with Claude",
+        "path": "courses/11-claude-with-amazon-bedrock/index.md",
+        "source": "index",
+        "diagram": "/lessons/claude-with-amazon-bedrock/03-tool-use-with-claude-diagram.svg",
+        "image": "/lessons/claude-with-amazon-bedrock/03-tool-use-with-claude-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "04-retrieval-augmented-generation",
+        "title": "Retrieval augmented generation",
+        "path": "courses/11-claude-with-amazon-bedrock/index.md",
+        "source": "index",
+        "diagram": "/lessons/claude-with-amazon-bedrock/04-retrieval-augmented-generation-diagram.svg",
+        "image": "/lessons/claude-with-amazon-bedrock/04-retrieval-augmented-generation-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "05-model-context-protocol-mcp",
+        "title": "Model Context Protocol (MCP)",
+        "path": "courses/11-claude-with-amazon-bedrock/index.md",
+        "source": "index",
+        "diagram": "/lessons/claude-with-amazon-bedrock/05-model-context-protocol-mcp-diagram.svg",
+        "image": "/lessons/claude-with-amazon-bedrock/05-model-context-protocol-mcp-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "06-claude-code-computer-use",
+        "title": "Claude Code & Computer Use",
+        "path": "courses/11-claude-with-amazon-bedrock/index.md",
+        "source": "index",
+        "diagram": "/lessons/claude-with-amazon-bedrock/06-claude-code-computer-use-diagram.svg",
+        "image": "/lessons/claude-with-amazon-bedrock/06-claude-code-computer-use-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      }
     ]
   },
   {
@@ -248,13 +1200,69 @@
     "icon": "Cloud",
     "description": "Vertex AI deployment patterns for Claude, from setup and prompting to RAG, tooling, and operations.",
     "lessons": [
-      { "id": "01-getting-started-with-claude", "title": "Getting started with Claude", "path": "courses/12-claude-with-google-clouds-vertex-ai/index.md", "source": "index" },
-      { "id": "02-prompt-engineering-evaluation", "title": "Prompt engineering & evaluation", "path": "courses/12-claude-with-google-clouds-vertex-ai/index.md", "source": "index" },
-      { "id": "03-tool-use-with-claude", "title": "Tool use with Claude", "path": "courses/12-claude-with-google-clouds-vertex-ai/index.md", "source": "index" },
-      { "id": "04-retrieval-augmented-generation", "title": "Retrieval augmented generation", "path": "courses/12-claude-with-google-clouds-vertex-ai/index.md", "source": "index" },
-      { "id": "05-model-context-protocol-mcp", "title": "Model Context Protocol (MCP)", "path": "courses/12-claude-with-google-clouds-vertex-ai/index.md", "source": "index" },
-      { "id": "06-claude-code-computer-use", "title": "Claude Code & Computer Use", "path": "courses/12-claude-with-google-clouds-vertex-ai/index.md", "source": "index" },
-      { "id": "07-agents-and-workflows", "title": "Agents and workflows", "path": "courses/12-claude-with-google-clouds-vertex-ai/index.md", "source": "index" }
+      {
+        "id": "01-getting-started-with-claude",
+        "title": "Getting started with Claude",
+        "path": "courses/12-claude-with-google-clouds-vertex-ai/index.md",
+        "source": "index",
+        "diagram": "/lessons/claude-with-google-clouds-vertex-ai/01-getting-started-with-claude-diagram.svg",
+        "image": "/lessons/claude-with-google-clouds-vertex-ai/01-getting-started-with-claude-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "02-prompt-engineering-evaluation",
+        "title": "Prompt engineering & evaluation",
+        "path": "courses/12-claude-with-google-clouds-vertex-ai/index.md",
+        "source": "index",
+        "diagram": "/lessons/claude-with-google-clouds-vertex-ai/02-prompt-engineering-evaluation-diagram.svg",
+        "image": "/lessons/claude-with-google-clouds-vertex-ai/02-prompt-engineering-evaluation-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "03-tool-use-with-claude",
+        "title": "Tool use with Claude",
+        "path": "courses/12-claude-with-google-clouds-vertex-ai/index.md",
+        "source": "index",
+        "diagram": "/lessons/claude-with-google-clouds-vertex-ai/03-tool-use-with-claude-diagram.svg",
+        "image": "/lessons/claude-with-google-clouds-vertex-ai/03-tool-use-with-claude-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "04-retrieval-augmented-generation",
+        "title": "Retrieval augmented generation",
+        "path": "courses/12-claude-with-google-clouds-vertex-ai/index.md",
+        "source": "index",
+        "diagram": "/lessons/claude-with-google-clouds-vertex-ai/04-retrieval-augmented-generation-diagram.svg",
+        "image": "/lessons/claude-with-google-clouds-vertex-ai/04-retrieval-augmented-generation-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "05-model-context-protocol-mcp",
+        "title": "Model Context Protocol (MCP)",
+        "path": "courses/12-claude-with-google-clouds-vertex-ai/index.md",
+        "source": "index",
+        "diagram": "/lessons/claude-with-google-clouds-vertex-ai/05-model-context-protocol-mcp-diagram.svg",
+        "image": "/lessons/claude-with-google-clouds-vertex-ai/05-model-context-protocol-mcp-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "06-claude-code-computer-use",
+        "title": "Claude Code & Computer Use",
+        "path": "courses/12-claude-with-google-clouds-vertex-ai/index.md",
+        "source": "index",
+        "diagram": "/lessons/claude-with-google-clouds-vertex-ai/06-claude-code-computer-use-diagram.svg",
+        "image": "/lessons/claude-with-google-clouds-vertex-ai/06-claude-code-computer-use-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "07-agents-and-workflows",
+        "title": "Agents and workflows",
+        "path": "courses/12-claude-with-google-clouds-vertex-ai/index.md",
+        "source": "index",
+        "diagram": "/lessons/claude-with-google-clouds-vertex-ai/07-agents-and-workflows-diagram.svg",
+        "image": "/lessons/claude-with-google-clouds-vertex-ai/07-agents-and-workflows-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      }
     ]
   },
   {
@@ -266,14 +1274,78 @@
     "icon": "Layers",
     "description": "Teaching-oriented AI fluency patterns, assignment design, assessment, and discipline-specific integration.",
     "lessons": [
-      { "id": "01-welcome-approaches-to-teaching-ai-fluency", "title": "Welcome Approaches To Teaching AI Fluency", "path": "courses/13-teaching-ai-fluency/01-welcome-approaches-to-teaching-ai-fluency.md", "source": "captured" },
-      { "id": "02-the-delegation-diligence-loop", "title": "The Delegation Diligence Loop", "path": "courses/13-teaching-ai-fluency/02-the-delegation-diligence-loop.md", "source": "captured" },
-      { "id": "03-the-description-discernment-loop", "title": "The Description Discernment Loop", "path": "courses/13-teaching-ai-fluency/03-the-description-discernment-loop.md", "source": "captured" },
-      { "id": "04-how-do-we-assess-the-4ds", "title": "How Do We Assess The 4Ds", "path": "courses/13-teaching-ai-fluency/04-how-do-we-assess-the-4ds.md", "source": "captured" },
-      { "id": "05-designing-assignments-for-ai-fluency", "title": "Designing Assignments For AI Fluency", "path": "courses/13-teaching-ai-fluency/05-designing-assignments-for-ai-fluency.md", "source": "captured" },
-      { "id": "06-ai-s-impact-and-your-discipline", "title": "AI's Impact And Your Discipline", "path": "courses/13-teaching-ai-fluency/06-ai-s-impact-and-your-discipline.md", "source": "captured" },
-      { "id": "07-applying-discipline-expertise-to-ai-fluency", "title": "Applying Discipline Expertise To AI Fluency", "path": "courses/13-teaching-ai-fluency/07-applying-discipline-expertise-to-ai-fluency.md", "source": "captured" },
-      { "id": "08-certificate-of-completion", "title": "Certificate Of Completion", "path": "courses/13-teaching-ai-fluency/08-certificate-of-completion.md", "source": "captured" }
+      {
+        "id": "01-welcome-approaches-to-teaching-ai-fluency",
+        "title": "Welcome Approaches To Teaching AI Fluency",
+        "path": "courses/13-teaching-ai-fluency/01-welcome-approaches-to-teaching-ai-fluency.md",
+        "source": "captured",
+        "diagram": "/lessons/teaching-ai-fluency/01-welcome-approaches-to-teaching-ai-fluency-diagram.png",
+        "image": "/lessons/teaching-ai-fluency/01-welcome-approaches-to-teaching-ai-fluency-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "02-the-delegation-diligence-loop",
+        "title": "The Delegation Diligence Loop",
+        "path": "courses/13-teaching-ai-fluency/02-the-delegation-diligence-loop.md",
+        "source": "captured",
+        "diagram": "/lessons/teaching-ai-fluency/02-the-delegation-diligence-loop-diagram.png",
+        "image": "/lessons/teaching-ai-fluency/02-the-delegation-diligence-loop-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "03-the-description-discernment-loop",
+        "title": "The Description Discernment Loop",
+        "path": "courses/13-teaching-ai-fluency/03-the-description-discernment-loop.md",
+        "source": "captured",
+        "diagram": "/lessons/teaching-ai-fluency/03-the-description-discernment-loop-diagram.png",
+        "image": "/lessons/teaching-ai-fluency/03-the-description-discernment-loop-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "04-how-do-we-assess-the-4ds",
+        "title": "How Do We Assess The 4Ds",
+        "path": "courses/13-teaching-ai-fluency/04-how-do-we-assess-the-4ds.md",
+        "source": "captured",
+        "diagram": "/lessons/teaching-ai-fluency/04-how-do-we-assess-the-4ds-diagram.png",
+        "image": "/lessons/teaching-ai-fluency/04-how-do-we-assess-the-4ds-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "05-designing-assignments-for-ai-fluency",
+        "title": "Designing Assignments For AI Fluency",
+        "path": "courses/13-teaching-ai-fluency/05-designing-assignments-for-ai-fluency.md",
+        "source": "captured",
+        "diagram": "/lessons/teaching-ai-fluency/05-designing-assignments-for-ai-fluency-diagram.png",
+        "image": "/lessons/teaching-ai-fluency/05-designing-assignments-for-ai-fluency-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "06-ai-s-impact-and-your-discipline",
+        "title": "AI's Impact And Your Discipline",
+        "path": "courses/13-teaching-ai-fluency/06-ai-s-impact-and-your-discipline.md",
+        "source": "captured",
+        "diagram": "/lessons/teaching-ai-fluency/06-ai-s-impact-and-your-discipline-diagram.png",
+        "image": "/lessons/teaching-ai-fluency/06-ai-s-impact-and-your-discipline-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "07-applying-discipline-expertise-to-ai-fluency",
+        "title": "Applying Discipline Expertise To AI Fluency",
+        "path": "courses/13-teaching-ai-fluency/07-applying-discipline-expertise-to-ai-fluency.md",
+        "source": "captured",
+        "diagram": "/lessons/teaching-ai-fluency/07-applying-discipline-expertise-to-ai-fluency-diagram.png",
+        "image": "/lessons/teaching-ai-fluency/07-applying-discipline-expertise-to-ai-fluency-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "08-certificate-of-completion",
+        "title": "Certificate Of Completion",
+        "path": "courses/13-teaching-ai-fluency/08-certificate-of-completion.md",
+        "source": "captured",
+        "diagram": "/lessons/teaching-ai-fluency/08-certificate-of-completion-diagram.png",
+        "image": "/lessons/teaching-ai-fluency/08-certificate-of-completion-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      }
     ]
   },
   {
@@ -285,16 +1357,96 @@
     "icon": "Heart",
     "description": "Nonprofit-focused AI fluency workflows for research, writing, data analysis, privacy, and operational augmentation.",
     "lessons": [
-      { "id": "01-welcome-to-ai-fluency-for-nonprofits", "title": "Welcome To AI Fluency For Nonprofits", "path": "courses/14-ai-fluency-for-nonprofits/01-welcome-to-ai-fluency-for-nonprofits.md", "source": "captured" },
-      { "id": "02-the-4d-framework", "title": "The 4D Framework", "path": "courses/14-ai-fluency-for-nonprofits/02-the-4d-framework.md", "source": "captured" },
-      { "id": "03-researching-with-ai", "title": "Researching With AI", "path": "courses/14-ai-fluency-for-nonprofits/03-researching-with-ai.md", "source": "captured" },
-      { "id": "04-writing-with-ai", "title": "Writing With AI", "path": "courses/14-ai-fluency-for-nonprofits/04-writing-with-ai.md", "source": "captured" },
-      { "id": "05-understanding-privacy-and-data", "title": "Understanding Privacy And Data", "path": "courses/14-ai-fluency-for-nonprofits/05-understanding-privacy-and-data.md", "source": "captured" },
-      { "id": "06-data-analysis-with-ai", "title": "Data Analysis With AI", "path": "courses/14-ai-fluency-for-nonprofits/06-data-analysis-with-ai.md", "source": "captured" },
-      { "id": "07-workflow-augmentation", "title": "Workflow Augmentation", "path": "courses/14-ai-fluency-for-nonprofits/07-workflow-augmentation.md", "source": "captured" },
-      { "id": "08-integration", "title": "Integration", "path": "courses/14-ai-fluency-for-nonprofits/08-integration.md", "source": "captured" },
-      { "id": "09-next-steps", "title": "Next Steps", "path": "courses/14-ai-fluency-for-nonprofits/09-next-steps.md", "source": "captured" },
-      { "id": "10-course-quiz", "title": "Course Quiz", "path": "courses/14-ai-fluency-for-nonprofits/10-course-quiz.md", "source": "captured" }
+      {
+        "id": "01-welcome-to-ai-fluency-for-nonprofits",
+        "title": "Welcome To AI Fluency For Nonprofits",
+        "path": "courses/14-ai-fluency-for-nonprofits/01-welcome-to-ai-fluency-for-nonprofits.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-fluency-for-nonprofits/01-welcome-to-ai-fluency-for-nonprofits-diagram.png",
+        "image": "/lessons/ai-fluency-for-nonprofits/01-welcome-to-ai-fluency-for-nonprofits-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "02-the-4d-framework",
+        "title": "The 4D Framework",
+        "path": "courses/14-ai-fluency-for-nonprofits/02-the-4d-framework.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-fluency-for-nonprofits/02-the-4d-framework-diagram.png",
+        "image": "/lessons/ai-fluency-for-nonprofits/02-the-4d-framework-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "03-researching-with-ai",
+        "title": "Researching With AI",
+        "path": "courses/14-ai-fluency-for-nonprofits/03-researching-with-ai.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-fluency-for-nonprofits/03-researching-with-ai-diagram.png",
+        "image": "/lessons/ai-fluency-for-nonprofits/03-researching-with-ai-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "04-writing-with-ai",
+        "title": "Writing With AI",
+        "path": "courses/14-ai-fluency-for-nonprofits/04-writing-with-ai.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-fluency-for-nonprofits/04-writing-with-ai-diagram.png",
+        "image": "/lessons/ai-fluency-for-nonprofits/04-writing-with-ai-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "05-understanding-privacy-and-data",
+        "title": "Understanding Privacy And Data",
+        "path": "courses/14-ai-fluency-for-nonprofits/05-understanding-privacy-and-data.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-fluency-for-nonprofits/05-understanding-privacy-and-data-diagram.png",
+        "image": "/lessons/ai-fluency-for-nonprofits/05-understanding-privacy-and-data-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "06-data-analysis-with-ai",
+        "title": "Data Analysis With AI",
+        "path": "courses/14-ai-fluency-for-nonprofits/06-data-analysis-with-ai.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-fluency-for-nonprofits/06-data-analysis-with-ai-diagram.png",
+        "image": "/lessons/ai-fluency-for-nonprofits/06-data-analysis-with-ai-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "07-workflow-augmentation",
+        "title": "Workflow Augmentation",
+        "path": "courses/14-ai-fluency-for-nonprofits/07-workflow-augmentation.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-fluency-for-nonprofits/07-workflow-augmentation-diagram.png",
+        "image": "/lessons/ai-fluency-for-nonprofits/07-workflow-augmentation-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "08-integration",
+        "title": "Integration",
+        "path": "courses/14-ai-fluency-for-nonprofits/08-integration.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-fluency-for-nonprofits/08-integration-diagram.png",
+        "image": "/lessons/ai-fluency-for-nonprofits/08-integration-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "09-next-steps",
+        "title": "Next Steps",
+        "path": "courses/14-ai-fluency-for-nonprofits/09-next-steps.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-fluency-for-nonprofits/09-next-steps-diagram.png",
+        "image": "/lessons/ai-fluency-for-nonprofits/09-next-steps-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "10-course-quiz",
+        "title": "Course Quiz",
+        "path": "courses/14-ai-fluency-for-nonprofits/10-course-quiz.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-fluency-for-nonprofits/10-course-quiz-diagram.png",
+        "image": "/lessons/ai-fluency-for-nonprofits/10-course-quiz-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      }
     ]
   },
   {
@@ -306,12 +1458,60 @@
     "icon": "Wrench",
     "description": "Agent skill design, configuration, sharing, troubleshooting, and positioning skills against other Claude Code features.",
     "lessons": [
-      { "id": "01-what-are-skills", "title": "What Are Skills", "path": "courses/15-introduction-to-agent-skills/01-what-are-skills.md", "source": "captured" },
-      { "id": "02-creating-your-first-skill", "title": "Creating Your First Skill", "path": "courses/15-introduction-to-agent-skills/02-creating-your-first-skill.md", "source": "captured" },
-      { "id": "03-configuration-and-multi-file-skills", "title": "Configuration And Multi File Skills", "path": "courses/15-introduction-to-agent-skills/03-configuration-and-multi-file-skills.md", "source": "captured" },
-      { "id": "04-skills-vs-other-claude-code-features", "title": "Skills Vs Other Claude Code Features", "path": "courses/15-introduction-to-agent-skills/04-skills-vs-other-claude-code-features.md", "source": "captured" },
-      { "id": "05-sharing-skills", "title": "Sharing Skills", "path": "courses/15-introduction-to-agent-skills/05-sharing-skills.md", "source": "captured" },
-      { "id": "06-troubleshooting-skills", "title": "Troubleshooting Skills", "path": "courses/15-introduction-to-agent-skills/06-troubleshooting-skills.md", "source": "captured" }
+      {
+        "id": "01-what-are-skills",
+        "title": "What Are Skills",
+        "path": "courses/15-introduction-to-agent-skills/01-what-are-skills.md",
+        "source": "captured",
+        "diagram": "/lessons/introduction-to-agent-skills/01-what-are-skills-diagram.png",
+        "image": "/lessons/introduction-to-agent-skills/01-what-are-skills-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "02-creating-your-first-skill",
+        "title": "Creating Your First Skill",
+        "path": "courses/15-introduction-to-agent-skills/02-creating-your-first-skill.md",
+        "source": "captured",
+        "diagram": "/lessons/introduction-to-agent-skills/02-creating-your-first-skill-diagram.png",
+        "image": "/lessons/introduction-to-agent-skills/02-creating-your-first-skill-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "03-configuration-and-multi-file-skills",
+        "title": "Configuration And Multi File Skills",
+        "path": "courses/15-introduction-to-agent-skills/03-configuration-and-multi-file-skills.md",
+        "source": "captured",
+        "diagram": "/lessons/introduction-to-agent-skills/03-configuration-and-multi-file-skills-diagram.png",
+        "image": "/lessons/introduction-to-agent-skills/03-configuration-and-multi-file-skills-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "04-skills-vs-other-claude-code-features",
+        "title": "Skills Vs Other Claude Code Features",
+        "path": "courses/15-introduction-to-agent-skills/04-skills-vs-other-claude-code-features.md",
+        "source": "captured",
+        "diagram": "/lessons/introduction-to-agent-skills/04-skills-vs-other-claude-code-features-diagram.png",
+        "image": "/lessons/introduction-to-agent-skills/04-skills-vs-other-claude-code-features-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "05-sharing-skills",
+        "title": "Sharing Skills",
+        "path": "courses/15-introduction-to-agent-skills/05-sharing-skills.md",
+        "source": "captured",
+        "diagram": "/lessons/introduction-to-agent-skills/05-sharing-skills-diagram.png",
+        "image": "/lessons/introduction-to-agent-skills/05-sharing-skills-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "06-troubleshooting-skills",
+        "title": "Troubleshooting Skills",
+        "path": "courses/15-introduction-to-agent-skills/06-troubleshooting-skills.md",
+        "source": "captured",
+        "diagram": "/lessons/introduction-to-agent-skills/06-troubleshooting-skills-diagram.png",
+        "image": "/lessons/introduction-to-agent-skills/06-troubleshooting-skills-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      }
     ]
   },
   {
@@ -323,10 +1523,42 @@
     "icon": "Bot",
     "description": "Subagent concepts, creation, design tradeoffs, and tactics for using them effectively.",
     "lessons": [
-      { "id": "01-what-are-subagents", "title": "What Are Subagents", "path": "courses/16-introduction-to-subagents/01-what-are-subagents.md", "source": "captured" },
-      { "id": "02-creating-a-subagent", "title": "Creating A Subagent", "path": "courses/16-introduction-to-subagents/02-creating-a-subagent.md", "source": "captured" },
-      { "id": "03-designing-effective-subagents", "title": "Designing Effective Subagents", "path": "courses/16-introduction-to-subagents/03-designing-effective-subagents.md", "source": "captured" },
-      { "id": "04-using-subagents-effectively", "title": "Using Subagents Effectively", "path": "courses/16-introduction-to-subagents/04-using-subagents-effectively.md", "source": "captured" }
+      {
+        "id": "01-what-are-subagents",
+        "title": "What Are Subagents",
+        "path": "courses/16-introduction-to-subagents/01-what-are-subagents.md",
+        "source": "captured",
+        "diagram": "/lessons/introduction-to-subagents/01-what-are-subagents-diagram.png",
+        "image": "/lessons/introduction-to-subagents/01-what-are-subagents-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "02-creating-a-subagent",
+        "title": "Creating A Subagent",
+        "path": "courses/16-introduction-to-subagents/02-creating-a-subagent.md",
+        "source": "captured",
+        "diagram": "/lessons/introduction-to-subagents/02-creating-a-subagent-diagram.png",
+        "image": "/lessons/introduction-to-subagents/02-creating-a-subagent-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "03-designing-effective-subagents",
+        "title": "Designing Effective Subagents",
+        "path": "courses/16-introduction-to-subagents/03-designing-effective-subagents.md",
+        "source": "captured",
+        "diagram": "/lessons/introduction-to-subagents/03-designing-effective-subagents-diagram.png",
+        "image": "/lessons/introduction-to-subagents/03-designing-effective-subagents-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "04-using-subagents-effectively",
+        "title": "Using Subagents Effectively",
+        "path": "courses/16-introduction-to-subagents/04-using-subagents-effectively.md",
+        "source": "captured",
+        "diagram": "/lessons/introduction-to-subagents/04-using-subagents-effectively-diagram.png",
+        "image": "/lessons/introduction-to-subagents/04-using-subagents-effectively-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      }
     ]
   },
   {
@@ -338,20 +1570,132 @@
     "icon": "Brain",
     "description": "Mental models for AI behavior, knowledge limits, steerability, and property tradeoffs.",
     "lessons": [
-      { "id": "01-intro-to-ai-capabilities-and-limitations", "title": "Intro To AI Capabilities And Limitations", "path": "courses/17-ai-capabilities-and-limitations/01-intro-to-ai-capabilities-and-limitations.md", "source": "captured" },
-      { "id": "02-what-we-mean-by-ai", "title": "What We Mean By AI", "path": "courses/17-ai-capabilities-and-limitations/02-what-we-mean-by-ai.md", "source": "captured" },
-      { "id": "03-how-ai-gets-its-character", "title": "How AI Gets Its Character", "path": "courses/17-ai-capabilities-and-limitations/03-how-ai-gets-its-character.md", "source": "captured" },
-      { "id": "04-next-token-prediction", "title": "Next Token Prediction", "path": "courses/17-ai-capabilities-and-limitations/04-next-token-prediction.md", "source": "captured" },
-      { "id": "05-try-it-out", "title": "Try It Out", "path": "courses/17-ai-capabilities-and-limitations/05-try-it-out.md", "source": "captured" },
-      { "id": "06-knowledge", "title": "Knowledge", "path": "courses/17-ai-capabilities-and-limitations/06-knowledge.md", "source": "captured" },
-      { "id": "07-try-it-out", "title": "Try It Out", "path": "courses/17-ai-capabilities-and-limitations/07-try-it-out.md", "source": "captured" },
-      { "id": "08-working-memory", "title": "Working Memory", "path": "courses/17-ai-capabilities-and-limitations/08-working-memory.md", "source": "captured" },
-      { "id": "09-try-it-out", "title": "Try It Out", "path": "courses/17-ai-capabilities-and-limitations/09-try-it-out.md", "source": "captured" },
-      { "id": "10-steerability", "title": "Steerability", "path": "courses/17-ai-capabilities-and-limitations/10-steerability.md", "source": "captured" },
-      { "id": "11-try-it-out", "title": "Try It Out", "path": "courses/17-ai-capabilities-and-limitations/11-try-it-out.md", "source": "captured" },
-      { "id": "12-when-properties-collide", "title": "When Properties Collide", "path": "courses/17-ai-capabilities-and-limitations/12-when-properties-collide.md", "source": "captured" },
-      { "id": "13-next-steps", "title": "Next Steps", "path": "courses/17-ai-capabilities-and-limitations/13-next-steps.md", "source": "captured" },
-      { "id": "14-course-quiz", "title": "Course Quiz", "path": "courses/17-ai-capabilities-and-limitations/14-course-quiz.md", "source": "captured" }
+      {
+        "id": "01-intro-to-ai-capabilities-and-limitations",
+        "title": "Intro To AI Capabilities And Limitations",
+        "path": "courses/17-ai-capabilities-and-limitations/01-intro-to-ai-capabilities-and-limitations.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-capabilities-and-limitations/01-intro-to-ai-capabilities-and-limitations-diagram.png",
+        "image": "/lessons/ai-capabilities-and-limitations/01-intro-to-ai-capabilities-and-limitations-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "02-what-we-mean-by-ai",
+        "title": "What We Mean By AI",
+        "path": "courses/17-ai-capabilities-and-limitations/02-what-we-mean-by-ai.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-capabilities-and-limitations/02-what-we-mean-by-ai-diagram.png",
+        "image": "/lessons/ai-capabilities-and-limitations/02-what-we-mean-by-ai-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "03-how-ai-gets-its-character",
+        "title": "How AI Gets Its Character",
+        "path": "courses/17-ai-capabilities-and-limitations/03-how-ai-gets-its-character.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-capabilities-and-limitations/03-how-ai-gets-its-character-diagram.png",
+        "image": "/lessons/ai-capabilities-and-limitations/03-how-ai-gets-its-character-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "04-next-token-prediction",
+        "title": "Next Token Prediction",
+        "path": "courses/17-ai-capabilities-and-limitations/04-next-token-prediction.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-capabilities-and-limitations/04-next-token-prediction-diagram.png",
+        "image": "/lessons/ai-capabilities-and-limitations/04-next-token-prediction-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "05-try-it-out",
+        "title": "Try It Out",
+        "path": "courses/17-ai-capabilities-and-limitations/05-try-it-out.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-capabilities-and-limitations/05-try-it-out-diagram.png",
+        "image": "/lessons/ai-capabilities-and-limitations/05-try-it-out-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "06-knowledge",
+        "title": "Knowledge",
+        "path": "courses/17-ai-capabilities-and-limitations/06-knowledge.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-capabilities-and-limitations/06-knowledge-diagram.png",
+        "image": "/lessons/ai-capabilities-and-limitations/06-knowledge-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "07-try-it-out",
+        "title": "Try It Out",
+        "path": "courses/17-ai-capabilities-and-limitations/07-try-it-out.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-capabilities-and-limitations/07-try-it-out-diagram.png",
+        "image": "/lessons/ai-capabilities-and-limitations/07-try-it-out-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "08-working-memory",
+        "title": "Working Memory",
+        "path": "courses/17-ai-capabilities-and-limitations/08-working-memory.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-capabilities-and-limitations/08-working-memory-diagram.png",
+        "image": "/lessons/ai-capabilities-and-limitations/08-working-memory-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "09-try-it-out",
+        "title": "Try It Out",
+        "path": "courses/17-ai-capabilities-and-limitations/09-try-it-out.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-capabilities-and-limitations/09-try-it-out-diagram.png",
+        "image": "/lessons/ai-capabilities-and-limitations/09-try-it-out-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "10-steerability",
+        "title": "Steerability",
+        "path": "courses/17-ai-capabilities-and-limitations/10-steerability.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-capabilities-and-limitations/10-steerability-diagram.png",
+        "image": "/lessons/ai-capabilities-and-limitations/10-steerability-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "11-try-it-out",
+        "title": "Try It Out",
+        "path": "courses/17-ai-capabilities-and-limitations/11-try-it-out.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-capabilities-and-limitations/11-try-it-out-diagram.png",
+        "image": "/lessons/ai-capabilities-and-limitations/11-try-it-out-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "12-when-properties-collide",
+        "title": "When Properties Collide",
+        "path": "courses/17-ai-capabilities-and-limitations/12-when-properties-collide.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-capabilities-and-limitations/12-when-properties-collide-diagram.png",
+        "image": "/lessons/ai-capabilities-and-limitations/12-when-properties-collide-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "13-next-steps",
+        "title": "Next Steps",
+        "path": "courses/17-ai-capabilities-and-limitations/13-next-steps.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-capabilities-and-limitations/13-next-steps-diagram.png",
+        "image": "/lessons/ai-capabilities-and-limitations/13-next-steps-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      },
+      {
+        "id": "14-course-quiz",
+        "title": "Course Quiz",
+        "path": "courses/17-ai-capabilities-and-limitations/14-course-quiz.md",
+        "source": "captured",
+        "diagram": "/lessons/ai-capabilities-and-limitations/14-course-quiz-diagram.png",
+        "image": "/lessons/ai-capabilities-and-limitations/14-course-quiz-hero.svg",
+        "video": "https://www.youtube.com/@anthropic-ai/videos"
+      }
     ]
   }
 ]

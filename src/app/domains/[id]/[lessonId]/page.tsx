@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { ArrowLeft, ChevronLeft, ChevronRight, FileText, List } from "lucide-react";
+import Image from "next/image";
+import { ArrowLeft, ChevronLeft, ChevronRight, FileText, List, PlayCircle, Youtube } from "lucide-react";
 import fs from "fs";
 import path from "path";
 import ReactMarkdown from "react-markdown";
@@ -22,6 +23,26 @@ export async function generateStaticParams() {
   return params;
 }
 
+function extractYoutubeVideoId(url: string): string | null {
+  const patterns = [
+    /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([A-Za-z0-9_-]{11})/,
+  ];
+  for (const p of patterns) {
+    const m = url.match(p);
+    if (m) return m[1];
+  }
+  return null;
+}
+
+function readInlineSvg(webPath: string): string | null {
+  try {
+    const filePath = path.join(process.cwd(), "public", webPath.replace(/^\//, ""));
+    return fs.readFileSync(filePath, "utf-8");
+  } catch {
+    return null;
+  }
+}
+
 export default async function LessonPage({ params }: Props) {
   const { id, lessonId } = await params;
   const course = getCourseById(id);
@@ -39,8 +60,7 @@ export default async function LessonPage({ params }: Props) {
   // Read markdown from repo root
   let content = "";
   try {
-    const repoRoot = path.resolve(process.cwd(), "..");
-    const filePath = path.join(repoRoot, lesson.path);
+    const filePath = path.join(process.cwd(), lesson.path);
     const raw = fs.readFileSync(filePath, "utf-8");
     // Strip screenshot reference lines and image links to screenshots/
     content = raw
@@ -56,10 +76,13 @@ export default async function LessonPage({ params }: Props) {
     content = `# ${lesson.title}\n\n_Content not yet available for this lesson._`;
   }
 
+  const diagramSvg = lesson.diagram?.endsWith(".svg") ? readInlineSvg(lesson.diagram) : null;
+  const videoId = lesson.video ? extractYoutubeVideoId(lesson.video) : null;
+
   return (
     <div className="min-h-screen bg-[#0a0a0a]">
       {/* Header */}
-      <div className="border-b border-zinc-800 bg-zinc-950/80 backdrop-blur-sm sticky top-0 z-10">
+      <div className="border-b border-zinc-800 bg-zinc-950/80 backdrop-blur-sm sticky top-10 z-10">
         <div className="max-w-[860px] mx-auto px-6 py-3 flex items-center gap-3">
           <Link
             href={`/domains/${id}`}
@@ -83,7 +106,7 @@ export default async function LessonPage({ params }: Props) {
 
       <div className="max-w-[860px] mx-auto px-6 py-8">
         {/* Lesson header */}
-        <div className="flex items-start justify-between gap-4 mb-8">
+        <div className="flex items-start justify-between gap-4 mb-6">
           <div>
             <div className="flex items-center gap-2 mb-2">
               <span
@@ -97,6 +120,85 @@ export default async function LessonPage({ params }: Props) {
           </div>
           <LessonToggle courseId={id} lessonId={lessonId} accentHex={colors.hex} />
         </div>
+
+        {/* Hero image */}
+        {lesson.image && (
+          <div className="mb-6 rounded-xl overflow-hidden border border-zinc-800 bg-zinc-900">
+            <Image
+              src={lesson.image}
+              alt={`${lesson.title} — hero`}
+              width={1200}
+              height={480}
+              className="w-full h-auto"
+              unoptimized
+              priority
+            />
+          </div>
+        )}
+
+        {/* Diagram */}
+        {lesson.diagram && (
+          <div className="mb-6 rounded-xl overflow-hidden border border-zinc-800 bg-zinc-950">
+            <div className="px-4 py-2 border-b border-zinc-800 flex items-center gap-2">
+              <span className="text-[10px] uppercase tracking-wider text-zinc-500">Diagram</span>
+            </div>
+            <div className="p-4 flex justify-center">
+              {diagramSvg ? (
+                <div
+                  className="w-full max-w-[1000px] [&_svg]:w-full [&_svg]:h-auto"
+                  dangerouslySetInnerHTML={{ __html: diagramSvg }}
+                />
+              ) : (
+                <Image
+                  src={lesson.diagram}
+                  alt={`${lesson.title} — diagram`}
+                  width={1000}
+                  height={600}
+                  className="w-full max-w-[1000px] h-auto rounded-lg"
+                  unoptimized
+                />
+              )}
+            </div>
+          </div>
+        )}
+
+        {/* Video */}
+        {lesson.video && (
+          <div className="mb-8 rounded-xl overflow-hidden border border-zinc-800 bg-zinc-950">
+            <div className="px-4 py-2 border-b border-zinc-800 flex items-center gap-2">
+              <PlayCircle className="h-3.5 w-3.5" style={{ color: colors.hex }} />
+              <span className="text-[10px] uppercase tracking-wider text-zinc-500">Video</span>
+            </div>
+            {videoId ? (
+              <div className="aspect-video">
+                <iframe
+                  src={`https://www.youtube.com/embed/${videoId}`}
+                  title={`${lesson.title} — video`}
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
+              </div>
+            ) : (
+              <a
+                href={lesson.video}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 px-4 py-4 hover:bg-zinc-900/60 transition-colors group"
+              >
+                <Youtube className="h-5 w-5 text-red-500 shrink-0" />
+                <div className="min-w-0 flex-1">
+                  <p className="text-sm text-zinc-200 group-hover:text-white truncate">
+                    Watch related videos on Anthropic&rsquo;s YouTube channel
+                  </p>
+                  <p className="text-[11px] text-zinc-500 truncate">{lesson.video}</p>
+                </div>
+                <span className="text-xs text-zinc-500 group-hover:text-zinc-300 shrink-0">Open →</span>
+              </a>
+            )}
+          </div>
+        )}
 
         {/* Markdown content */}
         <div className="prose prose-invert prose-sm max-w-none

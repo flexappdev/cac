@@ -3,7 +3,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
   BookOpen, LayoutGrid, Brain, Trophy, ExternalLink, Info, Settings2,
-  ChevronLeft, ChevronRight, GraduationCap,
+  ChevronLeft, ChevronRight,
 } from "lucide-react";
 import { useSettings } from "@/lib/settings";
 
@@ -24,18 +24,10 @@ export default function LeftSidebar() {
 
   return (
     <div
-      className={`fixed left-0 top-0 bottom-12 z-[90] flex flex-col border-r border-zinc-800 bg-zinc-950/95 backdrop-blur-sm transition-[width] duration-200 ${
+      className={`fixed left-0 top-10 bottom-12 z-[90] flex flex-col border-r border-zinc-800 bg-zinc-950/95 backdrop-blur-sm transition-[width] duration-200 ${
         collapsed ? "w-[52px]" : "w-[180px]"
       }`}
     >
-      {/* Logo */}
-      <div className="flex items-center gap-2.5 px-3 py-4 border-b border-zinc-800 shrink-0">
-        <GraduationCap className="h-5 w-5 shrink-0" style={{ color: "var(--app-accent)" }} />
-        {!collapsed && (
-          <span className="text-sm font-semibold text-zinc-100 truncate">CCA</span>
-        )}
-      </div>
-
       {/* Nav links */}
       <nav className="flex-1 py-2 overflow-y-auto">
         {NAV_ITEMS.map(({ href, icon: Icon, label }) => {
