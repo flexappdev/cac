@@ -3,7 +3,7 @@
 [![Live on Vercel](https://img.shields.io/badge/live-cac--snowy.vercel.app-black?logo=vercel)](https://cac-snowy.vercel.app)
 [![GitHub](https://img.shields.io/badge/github-flexappdev%2Fcca-181717?logo=github)](https://github.com/flexappdev/cca)
 [![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=nextdotjs)](https://nextjs.org)
-[![Version](https://img.shields.io/badge/version-v2.1-blue)](#v21-changelog)
+[![Version](https://img.shields.io/badge/version-v2.2-blue)](#changelog)
 
 [![Watch on YouTube](https://img.youtube.com/vi/wyFS10ZiuKI/maxresdefault.jpg)](https://www.youtube.com/watch?v=wyFS10ZiuKI)
 
@@ -15,7 +15,7 @@ A complete study system for the **Claude Certified Architect (CCA)** track from 
 | Component | What it is |
 |---|---|
 | `/cca` skill | Claude Code skill that coaches you through exam prep |
-| `src/` | Next.js 16 study dashboard with the imported 17-course library, progress tracking, and quiz review |
+| `src/` | Next.js 16 study dashboard — 17-course library, MCQ quizzes, diagrams gallery, Google sign-in |
 | [`guides/`](./guides/README.md) | Entry point for long-form guides and study references |
 | [`courses/`](./courses/README.md) | Captured course notes, lesson indexes, and diagrams |
 | [`cheat/`](./cheat/README.md) | Condensed cram sheets and quick-reference material |
