@@ -146,6 +146,17 @@ Or manually: copy `.claude/skills/cca/SKILL.md` → `~/.claude/skills/cca/SKILL.
 
 ---
 
+## Roadmap
+
+**Next goal:** Generate full lessons for each of the 17 courses — every lesson gets a written walkthrough plus a diagram, images, and a short video. The current `courses/` capture is just the outline scraped from Skilljar; the ambition is to turn it into a first-class studio-quality study library the app can serve directly.
+
+- Text: expanded lesson notes per topic (in `courses/<n>-<slug>/<lesson>.md`)
+- Diagrams: one editorial SVG per lesson (via `/abc-diagrams` skill)
+- Images: hero + inline via `/iad` (Nano Banana / Runware)
+- Video: 30–60s explainer via `/abc-videos` pipeline
+
+---
+
 ## License
 
 MIT — Mat Siems, 2026
